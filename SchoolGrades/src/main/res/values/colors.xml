@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pressed_orange">#CCFFBB33</color>
+    <color name="transparent">#FFFFFFFF</color>
+    <color name="main_orange">#FFFF8800</color>
+    <color name="main_blue">#FF0099CC</color>
+    <color name="main_red">#FFCC0000</color>
+    <color name="main_green">#FF669900</color>
+    <color name="main_purple">#FF9933CC</color>
+    <color name="text">#707070</color>
+
+    <!-- BetterPicker -->
+    <color name="custom_text_color_normal">#ffffffff</color>
+    <color name="custom_text_color_disabled">#ffb2b2b2</color>
+    <color name="custom_divider_color">#ffffffff</color>
+    <color name="custom_button_background">#00000000</color>
+    <color name="custom_button_background_pressed">#ffcc6600</color>
+    <color name="custom_key_background">#00000000</color>
+    <color name="custom_key_background_pressed">#ffcc6600</color>
+    <color name="custom_keyboard_indicator_color">#ffcc6600</color>
+</resources>

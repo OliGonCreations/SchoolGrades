@@ -1,0 +1,5 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/main_orange" />
+    <item android:drawable="@drawable/selectable_background_orange" />
+</layer-list>
+<!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/drawable/finish_background.xml -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SchoolGrades</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_exam">Klausur hinzufügen</string>
+    <string name="action_sort">Sortieren nach</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="prev">Zurück</string>
+    <string name="next">Weiter</string>
+    <string name="finish">Fertig</string>
+    <string name="review">Ändern</string>
+
+    <string name="submit_confirm_message">Fächer gespeichert.</string>
+    <string name="submit_confirm_button">Bestätigen</string>
+
+    <string name="prim_subject_pl">Kernfächer</string>
+    <string name="sec_subject_pl">Nebenfächer</string>
+
+    <string name="prefs_main">Allgemein</string>
+    <string name="prefs_setup">Fächer bearbeiten</string>
+
+</resources>

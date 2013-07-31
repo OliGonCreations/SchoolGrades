@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar" >
+        <source path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/assets" />
+    </dataSet>
+    <dataSet config="SchoolGradesProjectLibrariesHolographlibraryHoloGraphLibraryUnspecified.aar" >
+        <source path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesHolographlibraryHoloGraphLibraryUnspecified.aar/assets" />
+    </dataSet>
+    <dataSet config="SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar" >
+        <source path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/assets" />
+    </dataSet>
+    <dataSet config="SchoolGradesProjectLibrariesActionBarSherlockActionbarsherlockUnspecified.aar" >
+        <source path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesActionBarSherlockActionbarsherlockUnspecified.aar/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/src/main/assets" >
+            <file
+                name="fonts/Roboto-Bold.ttf"
+                path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/src/main/assets/fonts/Roboto-Bold.ttf" />
+            <file
+                name="fonts/AndroidClockMono-Thin.ttf"
+                path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/src/main/assets/fonts/AndroidClockMono-Thin.ttf" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/jonas/Dokumente/Development/Android Workspace/SchoolGradesProject/SchoolGrades/src/debug/assets" />
+    </dataSet>
+
+</merger>

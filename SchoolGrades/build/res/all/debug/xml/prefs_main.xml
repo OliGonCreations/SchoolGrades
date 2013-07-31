@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="@string/action_settings">
+    <PreferenceCategory android:title="@string/prefs_main">
+        <Preference android:title="@string/prefs_setup" >
+            <intent android:action="grades.SETUP" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen><!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/xml/prefs_main.xml -->

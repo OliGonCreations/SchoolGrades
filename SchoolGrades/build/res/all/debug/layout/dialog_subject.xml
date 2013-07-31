@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="8dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:id="@+id/dialog_subject_title"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="32sp"
+            android:textColor="#707070"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="18dp"/>
+
+    <View
+            android:layout_below="@+id/dialog_subject_title"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/main_orange"/>
+
+    <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/dialog_subject_title"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_average"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/icAverage"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/dialog_subject_current_average"
+            android:layout_alignTop="@+id/icAverage"
+            android:layout_alignBottom="@+id/icAverage"
+            android:layout_toRightOf="@+id/icAverage"/>
+
+    <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/dialog_subject_settings"
+            android:src="@drawable/ic_action_settings"
+            android:layout_below="@+id/dialog_subject_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/dialog_subject_current_average"
+            android:id="@+id/dialog_subject_grades">
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeS_1"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeS_2"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeS_3"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeS_4"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_below="@+id/dialog_subject_grades"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/text"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/dialog_subject_grades"
+            android:id="@+id/dialog_subject_gradesM">
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeM_1"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeM_2"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeM_3"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        <EditText
+                android:id="@+id/dialog_subject_gradeM_4"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <com.echo.holographlibrary.LineGraph
+            android:layout_below="@+id/dialog_subject_gradesM"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/graph"
+            android:layout_margin="16dp"/>
+
+</RelativeLayout><!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/layout/dialog_subject.xml -->

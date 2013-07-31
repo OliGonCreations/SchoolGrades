@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/arrays.xml -->
+    <string-array name="month_abbreviations">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/colors.xml -->
+    <color name="default_button_background_dark">#00000000</color>
+    <color name="default_button_background_light">#00000000</color>
+    <color name="default_button_background_pressed_dark">#46c5c1ff</color>
+    <color name="default_button_background_pressed_light">#ff00ddff</color>
+    <color name="default_divider_color_dark">#28ffffff</color>
+    <color name="default_divider_color_light">#28000000</color>
+    <color name="default_keyboard_indicator_color_dark">#ff33b5e5</color>
+    <color name="default_keyboard_indicator_color_light">#ff00ddff</color>
+    <color name="default_text_color_holo_dark">#ffffffff</color>
+    <color name="default_text_color_holo_dark_disabled">#ff4c4c4c</color>
+    <color name="default_text_color_holo_light">#ff000000</color>
+    <color name="default_text_color_holo_light_disabled">#ffb2b2b2</color>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/attrs.xml -->
+    <declare-styleable name="BetterPickersDialogFragment">
+        <attr name="bpTextColor" format="reference" />
+        <attr name="bpTitleColor" format="reference" />
+        <attr name="bpDeleteIcon" format="reference" />
+        <attr name="bpCheckIcon" format="reference" />
+        <attr name="bpKeyBackground" format="reference" />
+        <attr name="bpButtonBackground" format="reference" />
+        <attr name="bpTitleDividerColor" format="color" />
+        <attr name="bpDividerColor" format="color" />
+        <attr name="bpKeyboardIndicatorColor" format="color" />
+        <attr name="bpDialogBackground" format="reference" />
+    </declare-styleable>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/dimens.xml -->
+    <dimen name="body_font_padding">4dp</dimen>
+    <dimen name="date_viewpager_height">254dip</dimen>
+    <dimen name="dialog_button_font_size">14sp</dimen>
+    <dimen name="dialpad_font_size">48sp</dimen>
+    <dimen name="dialpad_font_size_ampm">24sp</dimen>
+    <dimen name="label_font_size">14sp</dimen>
+    <dimen name="medium_date_font_size">48dp</dimen>
+    <dimen name="medium_font_padding">12dp</dimen>
+    <dimen name="medium_font_size">60dp</dimen>
+    <dimen name="medium_font_size_hms">54dp</dimen>
+    <dimen name="tablet_dialpad_font_size">60sp</dimen>
+    <dimen name="tablet_dialpad_font_size_ampm">30sp</dimen>
+    <dimen name="timer_padding_left">16dip</dimen>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/ids.xml -->
+    <item name="date_keyboard" type="id"/>
+    <item name="date_month_int" type="id"/>
+    <item name="numbers_key" type="id"/>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/strings.xml -->
+    <string name="hms_picker_hours_label">H</string>
+    <string name="hms_picker_minutes_label">M</string>
+    <string name="hms_picker_seconds_label">S</string>
+    <string name="hours_label">h</string>
+    <string name="hours_label_description">hours</string>
+    <string name="max_error">Please input a number less than or equal to %1$d</string>
+    <string name="min_error">Please input a number greater than or equal to %1$d</string>
+    <string name="min_max_error">Please input a number between %1$d and %2$d</string>
+    <string name="minutes_label">m</string>
+    <string name="minutes_label_description">minutes</string>
+    <string name="number_delete">Delete</string>
+    <string name="number_picker_minus_label">—</string>
+    <string name="number_picker_plus_minus">+/-</string>
+    <string name="number_picker_seperator">.</string>
+    <string name="picker_cancel">Cancel</string>
+    <string name="picker_set">OK</string>
+    <string name="seconds_label">s</string>
+    <string name="seconds_label_description">seconds</string>
+    <string name="time_picker_00_label">:00</string>
+    <string name="time_picker_30_label">:30</string>
+    <string name="time_picker_ampm_label">--</string>
+    <string name="time_picker_time_seperator">:</string>
+    <string name="timer_delete">Delete</string>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/themes.xml -->
+    <style name="BetterPickersDialogFragment">
+        <item name="bpDialogBackground">@drawable/dialog_full_holo_dark</item>
+        <item name="bpTitleColor">@color/dialog_text_color_holo_dark</item>
+        <item name="bpTextColor">@color/dialog_text_color_holo_dark</item>
+        <item name="bpDeleteIcon">@drawable/ic_backspace_dark</item>
+        <item name="bpCheckIcon">@drawable/ic_check_dark</item>
+        <item name="bpKeyBackground">@drawable/key_background_dark</item>
+        <item name="bpButtonBackground">@drawable/button_background_dark</item>
+        <item name="bpTitleDividerColor">@color/default_keyboard_indicator_color_dark</item>
+        <item name="bpDividerColor">@color/default_divider_color_dark</item>
+        <item name="bpKeyboardIndicatorColor">@color/default_keyboard_indicator_color_dark</item>
+    </style>
+
+    <style name="BetterPickersDialogFragment.Light">
+        <item name="bpDialogBackground">@drawable/dialog_full_holo_light</item>
+        <item name="bpTitleColor">@color/dialog_text_color_holo_light</item>
+        <item name="bpTextColor">@color/dialog_text_color_holo_light</item>
+        <item name="bpDeleteIcon">@drawable/ic_backspace_light</item>
+        <item name="bpCheckIcon">@drawable/ic_check_light</item>
+        <item name="bpKeyBackground">@drawable/key_background_light</item>
+        <item name="bpButtonBackground">@drawable/button_background_light</item>
+        <item name="bpTitleDividerColor">@color/default_keyboard_indicator_color_dark</item>
+        <item name="bpDividerColor">@color/default_divider_color_light</item>
+        <item name="bpKeyboardIndicatorColor">@color/default_keyboard_indicator_color_light</item>
+    </style>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/android-betterpickers/library/res/values/styles.xml -->
+    <style name="dialog_button">
+        <item name="android:textSize">@dimen/dialog_button_font_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="dialpad_text" parent="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size_ampm</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="medium_bold">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="medium_bold_date" parent="@style/medium_bold">
+        <item name="android:textSize">@dimen/medium_date_font_size</item>
+    </style>
+
+    <style name="medium_bold_hms" parent="medium_bold">
+        <item name="android:textSize">@dimen/medium_font_size_hms</item>
+    </style>
+
+    <style name="medium_light">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="medium_light_date" parent="@style/medium_bold">
+        <item name="android:textSize">@dimen/medium_date_font_size</item>
+    </style>
+
+    <style name="medium_light_hms" parent="medium_light">
+        <item name="android:textSize">@dimen/medium_font_size_hms</item>
+    </style>
+
+    <style name="tablet_dialpad">
+        <item name="android:textSize">@dimen/tablet_dialpad_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="tablet_dialpad_text">
+        <item name="android:textSize">@dimen/tablet_dialpad_font_size_ampm</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+</resources>

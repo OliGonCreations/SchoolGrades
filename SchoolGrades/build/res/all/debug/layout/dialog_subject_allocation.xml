@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="8dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:id="@+id/dialog_subject_title"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="32sp"
+            android:textColor="#707070"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="18dp"/>
+
+    <View
+            android:layout_below="@+id/dialog_subject_title"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/main_orange"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#707070"
+            android:layout_below="@+id/dialog_subject_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:textSize="28sp"
+            android:id="@+id/tvAllocation"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="s"
+            android:textColor="#707070"
+            android:textSize="28sp"
+            android:layout_marginRight="28dp"
+            android:layout_alignTop="@+id/tvAllocation"
+            android:layout_alignBottom="@+id/tvAllocation"
+            android:layout_alignRight="@+id/tvAllocation"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m"
+            android:textColor="#707070"
+            android:textSize="28sp"
+            android:layout_marginLeft="28dp"
+            android:layout_alignTop="@+id/tvAllocation"
+            android:layout_alignBottom="@+id/tvAllocation"
+            android:layout_alignLeft="@+id/tvAllocation"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#707070"
+            android:layout_below="@+id/tvAllocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="28sp"
+            android:id="@+id/tvAllocation1"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="#707070"
+            android:layout_marginRight="28dp"
+            android:layout_alignTop="@+id/tvAllocation1"
+            android:layout_alignBottom="@+id/tvAllocation1"
+            android:layout_alignRight="@+id/tvAllocation1"
+            android:id="@+id/tvAllocationS"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="#707070"
+            android:layout_marginLeft="28dp"
+            android:layout_alignTop="@+id/tvAllocation1"
+            android:layout_alignBottom="@+id/tvAllocation1"
+            android:layout_alignLeft="@+id/tvAllocation1"
+            android:id="@+id/tvAllocationM"/>
+
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbAllocation"
+            android:layout_below="@+id/tvAllocationS"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="30dp"
+            android:layout_toRightOf="@+id/cbCustom"
+            android:layout_alignParentRight="true"
+            android:max="20"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbCustom"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_below="@+id/tvAllocationS"
+            android:layout_alignParentLeft="true"/>
+
+</RelativeLayout><!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/layout/dialog_subject_allocation.xml -->

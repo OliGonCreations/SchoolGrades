@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="drawer_menu_items">
+        <item>Fächer</item>
+        <item>Klausuren</item>
+        <item>Statistiken</item>
+    </string-array>
+
+    <string-array name="prim_subjects">
+        <item>Deutsch</item>
+        <item>Mathematik</item>
+        <item>Englisch</item>
+        <item>Französisch</item>
+        <item>Physik</item>
+        <item>Chemie</item>
+        <item>Biologie</item>
+        <item>Geschichte</item>
+        <item>Wirtschaft</item>
+        <item>Sport</item>
+        <item>Musik</item>
+        <item>Bildende Kunst</item>
+    </string-array>
+
+    <array name="prim_subjects_colors">
+        <item>@color/main_orange</item>
+        <item>@color/main_red</item>
+        <item>@color/main_blue</item>
+        <item>@color/main_orange</item>
+        <item>@color/main_green</item>
+        <item>@color/main_blue</item>
+        <item>@color/main_purple</item>
+        <item>@color/main_red</item>
+        <item>@color/main_orange</item>
+        <item>@color/main_blue</item>
+        <item>@color/main_green</item>
+        <item>@color/main_purple</item>
+    </array>
+
+    <string-array name="sec_subjects">
+        <item>Englisch</item>
+        <item>Französisch</item>
+        <item>Physik</item>
+        <item>Chemie</item>
+        <item>Biologie</item>
+        <item>Geschichte</item>
+        <item>Wirtschaft</item>
+        <item>Sport</item>
+        <item>Musik</item>
+        <item>Bildende Kunst</item>
+    </string-array>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/WizardPager/LibWizardPager/res/values/colors.xml -->
+    <color name="review_green">#ffcc0000</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+    <color name="step_pager_previous_tab_color">#44ff8800</color>
+    <color name="step_pager_selected_last_tab_color">#ffcc0000</color>
+    <color name="step_pager_selected_tab_color">#ffff8800</color>
+    <color name="text_light">#66000000</color>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/WizardPager/LibWizardPager/res/values/dimens.xml -->
+    <dimen name="list_item_height_small">48dp</dimen>
+    <dimen name="list_item_padding_left">6dp</dimen>
+    <dimen name="list_item_padding_right">6dp</dimen>
+    <dimen name="step_pager_tab_height">3dp</dimen>
+    <dimen name="step_pager_tab_spacing">4dp</dimen>
+    <dimen name="step_pager_tab_width">32dp</dimen>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/WizardPager/LibWizardPager/res/values/strings.xml -->
+    <string name="hint_your_email">Optional</string>
+    <string name="hint_your_name">e.g. Larry</string>
+    <string name="label_your_email">Email</string>
+    <string name="label_your_name">Name</string>
+    <string name="review">Review</string>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/libraries/WizardPager/LibWizardPager/res/values/styles.xml -->
+    <style name="WizardFormLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="WizardPageContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="WizardPageTitle">
+        <item name="android:id">@android:id/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">@dimen/list_item_padding_left</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#ffff8800</item>
+    </style>
+
+</resources>
