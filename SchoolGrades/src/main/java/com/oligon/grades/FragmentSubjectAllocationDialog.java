@@ -57,6 +57,7 @@ public class FragmentSubjectAllocationDialog extends SherlockDialogFragment impl
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
+                        FragmentSubjects.db.updateAllocation(title, Integer.parseInt(tvAllocationS.getText().toString()), Integer.parseInt(tvAllocationM.getText().toString()));
                         FragmentSubjectDialog.updateValues();
                         getDialog().dismiss();
                     }
@@ -86,13 +87,11 @@ public class FragmentSubjectAllocationDialog extends SherlockDialogFragment impl
             sbAllocation.setEnabled(false);
             tvAllocationS.setText("2");
             tvAllocationM.setText("1");
-            FragmentSubjects.db.updateAllocation(title, 66, 33);
         }
     }
 
     private void setProgress(int progress) {
         tvAllocationS.setText((20 - progress) * 5 + "");
         tvAllocationM.setText(progress * 5 + "");
-        FragmentSubjects.db.updateAllocation(title, (20 - progress) * 5, progress * 5);
     }
 }

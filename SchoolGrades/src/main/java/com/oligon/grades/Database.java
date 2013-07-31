@@ -243,7 +243,7 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_GRADES + " ORDER BY " + KEY_COUNT + " DESC", null);
         if (cursor.moveToFirst()) {
             do {
-                s = m = sA = mA = allocationS = allocationM =0;
+                s = m = sA = mA = allocationS = allocationM = 0;
 
                 for (int i = 0; i < 4; i++) {
                     if (cursor.getInt(i + 6) != -1) {

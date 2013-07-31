@@ -21,7 +21,7 @@ import com.echo.holographlibrary.LinePoint;
 
 import java.math.BigDecimal;
 
-public class FragmentSubjectDialog extends SherlockDialogFragment implements NumberPickerDialogFragment.NumberPickerDialogHandler, View.OnClickListener {
+public class FragmentSubjectDialog extends SherlockDialogFragment implements NumberPickerDialogFragment.NumberPickerDialogHandler, View.OnClickListener, LineGraph.OnPointClickedListener {
 
     private static LineGraph graph;
     private static EditText grade1s, grade2s, grade3s, grade4s, grade1m, grade2m, grade3m, grade4m;
@@ -62,6 +62,7 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
         ((TextView) view.findViewById(R.id.dialog_subject_title)).setText(title);
         view.findViewById(R.id.dialog_subject_settings).setOnClickListener(this);
         graph = (LineGraph) view.findViewById(R.id.graph);
+        graph.setOnPointClickedListener(this);
         gradeAverage = (TextView) view.findViewById(R.id.dialog_subject_current_average);
         grade1s = (EditText) view.findViewById(R.id.dialog_subject_gradeS_1);
         grade2s = (EditText) view.findViewById(R.id.dialog_subject_gradeS_2);
@@ -224,5 +225,13 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
                 else graph.setVisibility(View.GONE);
             }
         }.execute();
+    }
+
+    @Override
+    public void onClick(int lineIndex, int pointIndex) {
+        String text = " Punkte";
+        if (lineIndex == 1 || graph.getLines().size() < 2) text += " mündlich";
+        else text += " schriftlich";
+        CheatSheet.showCheatSheet(graph, graph.getLine(lineIndex).getPoint(pointIndex).getY() + text);
     }
 }
