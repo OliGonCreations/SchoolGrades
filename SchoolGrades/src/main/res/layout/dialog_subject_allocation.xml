@@ -111,4 +111,11 @@
             android:layout_below="@+id/tvAllocationS"
             android:layout_alignParentLeft="true"/>
 
+    <com.oligon.grades.ui.ColorPickerPalette
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sbAllocation"
+            android:id="@id/color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 </RelativeLayout>

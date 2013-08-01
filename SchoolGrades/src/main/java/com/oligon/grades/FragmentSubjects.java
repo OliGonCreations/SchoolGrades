@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.actionbarsherlock.app.SherlockListFragment;
+import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
 public class FragmentSubjects extends SherlockListFragment {
@@ -58,6 +59,12 @@ public class FragmentSubjects extends SherlockListFragment {
             Toast.makeText(getActivity(), "Sort", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+        menu.findItem(R.id.action_add_exam).setVisible(false);
     }
 
     public static void updateContent() {

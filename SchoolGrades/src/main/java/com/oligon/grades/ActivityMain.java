@@ -94,9 +94,12 @@ public class ActivityMain extends SherlockFragmentActivity {
                 fragmentManager.beginTransaction().replace(R.id.content_frame, new FragmentSubjects()).commit();
                 break;
             case 1:
-                fragmentManager.beginTransaction().replace(R.id.content_frame, new FragmentGrades()).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, new FragmentExams()).commit();
                 break;
             case 2:
+                fragmentManager.beginTransaction().replace(R.id.content_frame, new FragmentAbitur()).commit();
+                break;
+            case 3:
                 fragmentManager.beginTransaction().replace(R.id.content_frame, new FragmentStats()).commit();
                 break;
         }

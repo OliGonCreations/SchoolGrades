@@ -764,10 +764,10 @@ containing a value of this type.
         public static final int abs__bright_foreground_disabled_holo_light=0x7f080003;
         public static final int abs__bright_foreground_holo_dark=0x7f080004;
         public static final int abs__bright_foreground_holo_light=0x7f080005;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f080028;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f080029;
-        public static final int abs__primary_text_holo_dark=0x7f08002a;
-        public static final int abs__primary_text_holo_light=0x7f08002b;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f08002b;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f08002c;
+        public static final int abs__primary_text_holo_dark=0x7f08002d;
+        public static final int abs__primary_text_holo_light=0x7f08002e;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/colors.xml 
          */
         public static final int custom_button_background=0x7f080006;
@@ -792,32 +792,35 @@ containing a value of this type.
         public static final int default_text_color_holo_dark_disabled=0x7f080017;
         public static final int default_text_color_holo_light=0x7f080018;
         public static final int default_text_color_holo_light_disabled=0x7f080019;
-        public static final int dialog_text_color_holo_dark=0x7f08002c;
-        public static final int dialog_text_color_holo_light=0x7f08002d;
+        public static final int dialog_text_color_holo_dark=0x7f08002f;
+        public static final int dialog_text_color_holo_light=0x7f080030;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/colors.xml 
          */
         public static final int main_blue=0x7f08001a;
-        public static final int main_green=0x7f08001b;
-        public static final int main_orange=0x7f08001c;
-        public static final int main_purple=0x7f08001d;
-        public static final int main_red=0x7f08001e;
-        public static final int pressed_orange=0x7f08001f;
+        public static final int main_brown=0x7f08001b;
+        public static final int main_green=0x7f08001c;
+        public static final int main_grey=0x7f08001d;
+        public static final int main_orange=0x7f08001e;
+        public static final int main_purple=0x7f08001f;
+        public static final int main_red=0x7f080020;
+        public static final int main_yellow=0x7f080021;
+        public static final int pressed_orange=0x7f080022;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml 
          */
-        public static final int review_green=0x7f080020;
-        public static final int step_pager_next_tab_color=0x7f080021;
-        public static final int step_pager_previous_tab_color=0x7f080022;
-        public static final int step_pager_selected_last_tab_color=0x7f080023;
-        public static final int step_pager_selected_tab_color=0x7f080024;
+        public static final int review_green=0x7f080023;
+        public static final int step_pager_next_tab_color=0x7f080024;
+        public static final int step_pager_previous_tab_color=0x7f080025;
+        public static final int step_pager_selected_last_tab_color=0x7f080026;
+        public static final int step_pager_selected_tab_color=0x7f080027;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/colors.xml 
          */
-        public static final int text=0x7f080025;
+        public static final int text=0x7f080028;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml 
          */
-        public static final int text_light=0x7f080026;
+        public static final int text_light=0x7f080029;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/colors.xml 
          */
-        public static final int transparent=0x7f080027;
+        public static final int transparent=0x7f08002a;
     }
     public static final class dimen {
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesActionBarSherlockActionbarsherlockUnspecified.aar/res/values-land/values.xml 
@@ -835,8 +838,8 @@ containing a value of this type.
         public static final int abs__action_bar_title_text_size=0x7f0a0005;
         public static final int abs__action_button_min_width=0x7f0a0006;
         public static final int abs__config_prefDialogWidth=0x7f0a0007;
-        public static final int abs__dialog_min_width_major=0x7f0a0022;
-        public static final int abs__dialog_min_width_minor=0x7f0a0023;
+        public static final int abs__dialog_min_width_major=0x7f0a0026;
+        public static final int abs__dialog_min_width_minor=0x7f0a0027;
         public static final int abs__dropdownitem_icon_width=0x7f0a0008;
         public static final int abs__dropdownitem_text_padding_left=0x7f0a0009;
         public static final int abs__dropdownitem_text_padding_right=0x7f0a000a;
@@ -851,34 +854,41 @@ containing a value of this type.
  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values-sw600dp/values.xml 
          */
         public static final int body_font_padding=0x7f0a000f;
-        /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values-land/values.xml 
+        /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/dimens.xml 
          */
-        public static final int date_viewpager_height=0x7f0a0010;
-        public static final int dialog_button_font_size=0x7f0a0011;
-        public static final int dialpad_font_size=0x7f0a0012;
-        public static final int dialpad_font_size_ampm=0x7f0a0013;
-        public static final int label_font_size=0x7f0a0014;
+        public static final int color_swatch_large=0x7f0a0010;
+        public static final int color_swatch_margins_large=0x7f0a0011;
+        public static final int color_swatch_margins_small=0x7f0a0012;
+        public static final int color_swatch_small=0x7f0a0013;
+        /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
+ From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values-land/values.xml 
+         */
+        public static final int date_viewpager_height=0x7f0a0014;
+        public static final int dialog_button_font_size=0x7f0a0015;
+        public static final int dialpad_font_size=0x7f0a0016;
+        public static final int dialpad_font_size_ampm=0x7f0a0017;
+        public static final int label_font_size=0x7f0a0018;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml 
          */
-        public static final int list_item_height_small=0x7f0a0015;
-        public static final int list_item_padding_left=0x7f0a0016;
-        public static final int list_item_padding_right=0x7f0a0017;
+        public static final int list_item_height_small=0x7f0a0019;
+        public static final int list_item_padding_left=0x7f0a001a;
+        public static final int list_item_padding_right=0x7f0a001b;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
          */
-        public static final int medium_date_font_size=0x7f0a0018;
-        public static final int medium_font_padding=0x7f0a0019;
-        public static final int medium_font_size=0x7f0a001a;
-        public static final int medium_font_size_hms=0x7f0a001b;
+        public static final int medium_date_font_size=0x7f0a001c;
+        public static final int medium_font_padding=0x7f0a001d;
+        public static final int medium_font_size=0x7f0a001e;
+        public static final int medium_font_size_hms=0x7f0a001f;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml 
          */
-        public static final int step_pager_tab_height=0x7f0a001c;
-        public static final int step_pager_tab_spacing=0x7f0a001d;
-        public static final int step_pager_tab_width=0x7f0a001e;
+        public static final int step_pager_tab_height=0x7f0a0020;
+        public static final int step_pager_tab_spacing=0x7f0a0021;
+        public static final int step_pager_tab_width=0x7f0a0022;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
          */
-        public static final int tablet_dialpad_font_size=0x7f0a001f;
-        public static final int tablet_dialpad_font_size_ampm=0x7f0a0020;
-        public static final int timer_padding_left=0x7f0a0021;
+        public static final int tablet_dialpad_font_size=0x7f0a0023;
+        public static final int tablet_dialpad_font_size_ampm=0x7f0a0024;
+        public static final int timer_padding_left=0x7f0a0025;
     }
     public static final class drawable {
         public static final int ab_background_textured_orange=0x7f020000;
@@ -1052,235 +1062,243 @@ containing a value of this type.
         public static final int card_bg_r4=0x7f0200a8;
         public static final int card_bg_r4_flat_top=0x7f0200a9;
         public static final int card_bg_r8=0x7f0200aa;
-        public static final int custom_dialog_background=0x7f0200ab;
-        public static final int dialog_full_holo_dark=0x7f0200ac;
-        public static final int dialog_full_holo_light=0x7f0200ad;
-        public static final int drawer_shadow=0x7f0200ae;
-        public static final int edit_text_holo_light=0x7f0200af;
-        public static final int edit_text_holo_light_blue=0x7f0200b0;
-        public static final int edit_text_holo_orange=0x7f0200b1;
-        public static final int finish_background=0x7f0200b2;
-        public static final int ic_action_add=0x7f0200b3;
-        public static final int ic_action_settings=0x7f0200b4;
-        public static final int ic_action_sort=0x7f0200b5;
-        public static final int ic_average=0x7f0200b6;
-        public static final int ic_backspace_custom=0x7f0200b7;
-        public static final int ic_backspace_dark=0x7f0200b8;
-        public static final int ic_backspace_disabled_custom=0x7f0200b9;
-        public static final int ic_backspace_disabled_dark=0x7f0200ba;
-        public static final int ic_backspace_disabled_light=0x7f0200bb;
-        public static final int ic_backspace_light=0x7f0200bc;
-        public static final int ic_backspace_normal_custom=0x7f0200bd;
-        public static final int ic_backspace_normal_dark=0x7f0200be;
-        public static final int ic_backspace_normal_light=0x7f0200bf;
-        public static final int ic_check_custom=0x7f0200c0;
-        public static final int ic_check_dark=0x7f0200c1;
-        public static final int ic_check_dark_disabled=0x7f0200c2;
-        public static final int ic_check_disabled_custom=0x7f0200c3;
-        public static final int ic_check_light=0x7f0200c4;
-        public static final int ic_check_light_disabled=0x7f0200c5;
-        public static final int ic_check_normal_custom=0x7f0200c6;
-        public static final int ic_check_normal_dark=0x7f0200c7;
-        public static final int ic_check_normal_light=0x7f0200c8;
-        public static final int ic_drawer=0x7f0200c9;
-        public static final int ic_launcher=0x7f0200ca;
-        public static final int item_background_holo_light=0x7f0200cb;
-        public static final int key_background_custom=0x7f0200cc;
-        public static final int key_background_dark=0x7f0200cd;
-        public static final int key_background_light=0x7f0200ce;
-        public static final int list_activated_holo=0x7f0200cf;
-        public static final int list_focused_holo=0x7f0200d0;
-        public static final int list_focused_orange=0x7f0200d1;
-        public static final int list_longpressed_holo=0x7f0200d2;
-        public static final int list_pressed_holo_light=0x7f0200d3;
-        public static final int list_selector_background_transition_holo_light=0x7f0200d4;
-        public static final int list_selector_disabled_holo_light=0x7f0200d5;
-        public static final int list_selector_holo_light=0x7f0200d6;
-        public static final int menu_dropdown_panel_orange=0x7f0200d7;
-        public static final int popup_black=0x7f0200d8;
-        public static final int pressed_background_orange=0x7f0200d9;
-        public static final int progress_bg_orange=0x7f0200da;
-        public static final int progress_horizontal_orange=0x7f0200db;
-        public static final int progress_primary_orange=0x7f0200dc;
-        public static final int progress_secondary_orange=0x7f0200dd;
-        public static final int scrubber_control_disabled_holo=0x7f0200de;
-        public static final int scrubber_control_focused_holo=0x7f0200df;
-        public static final int scrubber_control_normal_holo=0x7f0200e0;
-        public static final int scrubber_control_pressed_holo=0x7f0200e1;
-        public static final int scrubber_control_selector_holo_light=0x7f0200e2;
-        public static final int scrubber_primary_holo=0x7f0200e3;
-        public static final int scrubber_progress_horizontal_holo_light=0x7f0200e4;
-        public static final int scrubber_secondary_holo=0x7f0200e5;
-        public static final int scrubber_track_holo_light=0x7f0200e6;
-        public static final int selectable_background_orange=0x7f0200e7;
-        public static final int spinner_ab_default_orange=0x7f0200e8;
-        public static final int spinner_ab_disabled_orange=0x7f0200e9;
-        public static final int spinner_ab_focused_orange=0x7f0200ea;
-        public static final int spinner_ab_pressed_orange=0x7f0200eb;
-        public static final int spinner_background_ab_orange=0x7f0200ec;
-        public static final int spinner_background_holo_light=0x7f0200ed;
-        public static final int spinner_default_holo_light=0x7f0200ee;
-        public static final int spinner_disabled_holo_light=0x7f0200ef;
-        public static final int spinner_focused_holo_light=0x7f0200f0;
-        public static final int spinner_pressed_holo_light=0x7f0200f1;
-        public static final int tab_indicator_ab_orange=0x7f0200f2;
-        public static final int tab_selected_focused_orange=0x7f0200f3;
-        public static final int tab_selected_orange=0x7f0200f4;
-        public static final int tab_selected_pressed_orange=0x7f0200f5;
-        public static final int tab_unselected_focused_orange=0x7f0200f6;
-        public static final int tab_unselected_orange=0x7f0200f7;
-        public static final int tab_unselected_pressed_orange=0x7f0200f8;
-        public static final int textfield_activated_holo_light=0x7f0200f9;
-        public static final int textfield_activated_holo_light_blue=0x7f0200fa;
-        public static final int textfield_default_holo_light=0x7f0200fb;
-        public static final int textfield_default_holo_light_blue=0x7f0200fc;
-        public static final int textfield_disabled_focused_holo_light=0x7f0200fd;
-        public static final int textfield_disabled_focused_holo_light_blue=0x7f0200fe;
-        public static final int textfield_disabled_holo_light=0x7f0200ff;
-        public static final int textfield_disabled_holo_light_blue=0x7f020100;
-        public static final int textfield_focused_holo_light=0x7f020101;
-        public static final int textfield_focused_holo_light_blue=0x7f020102;
+        public static final int color_picker_swatch=0x7f0200ab;
+        public static final int custom_dialog_background=0x7f0200ac;
+        public static final int dialog_full_holo_dark=0x7f0200ad;
+        public static final int dialog_full_holo_light=0x7f0200ae;
+        public static final int drawer_shadow=0x7f0200af;
+        public static final int edit_text_holo_light=0x7f0200b0;
+        public static final int edit_text_holo_light_blue=0x7f0200b1;
+        public static final int edit_text_holo_orange=0x7f0200b2;
+        public static final int finish_background=0x7f0200b3;
+        public static final int ic_action_add=0x7f0200b4;
+        public static final int ic_action_settings=0x7f0200b5;
+        public static final int ic_action_sort=0x7f0200b6;
+        public static final int ic_average=0x7f0200b7;
+        public static final int ic_backspace_custom=0x7f0200b8;
+        public static final int ic_backspace_dark=0x7f0200b9;
+        public static final int ic_backspace_disabled_custom=0x7f0200ba;
+        public static final int ic_backspace_disabled_dark=0x7f0200bb;
+        public static final int ic_backspace_disabled_light=0x7f0200bc;
+        public static final int ic_backspace_light=0x7f0200bd;
+        public static final int ic_backspace_normal_custom=0x7f0200be;
+        public static final int ic_backspace_normal_dark=0x7f0200bf;
+        public static final int ic_backspace_normal_light=0x7f0200c0;
+        public static final int ic_check_custom=0x7f0200c1;
+        public static final int ic_check_dark=0x7f0200c2;
+        public static final int ic_check_dark_disabled=0x7f0200c3;
+        public static final int ic_check_disabled_custom=0x7f0200c4;
+        public static final int ic_check_light=0x7f0200c5;
+        public static final int ic_check_light_disabled=0x7f0200c6;
+        public static final int ic_check_normal_custom=0x7f0200c7;
+        public static final int ic_check_normal_dark=0x7f0200c8;
+        public static final int ic_check_normal_light=0x7f0200c9;
+        public static final int ic_colorpicker_swatch_selected=0x7f0200ca;
+        public static final int ic_drawer=0x7f0200cb;
+        public static final int ic_launcher=0x7f0200cc;
+        public static final int item_background_holo_light=0x7f0200cd;
+        public static final int key_background_custom=0x7f0200ce;
+        public static final int key_background_dark=0x7f0200cf;
+        public static final int key_background_light=0x7f0200d0;
+        public static final int list_activated_holo=0x7f0200d1;
+        public static final int list_focused_holo=0x7f0200d2;
+        public static final int list_focused_orange=0x7f0200d3;
+        public static final int list_longpressed_holo=0x7f0200d4;
+        public static final int list_pressed_holo_light=0x7f0200d5;
+        public static final int list_selector_background_transition_holo_light=0x7f0200d6;
+        public static final int list_selector_disabled_holo_light=0x7f0200d7;
+        public static final int list_selector_holo_light=0x7f0200d8;
+        public static final int menu_dropdown_panel_orange=0x7f0200d9;
+        public static final int popup_black=0x7f0200da;
+        public static final int pressed_background_orange=0x7f0200db;
+        public static final int progress_bg_orange=0x7f0200dc;
+        public static final int progress_horizontal_orange=0x7f0200dd;
+        public static final int progress_primary_orange=0x7f0200de;
+        public static final int progress_secondary_orange=0x7f0200df;
+        public static final int scrubber_control_disabled_holo=0x7f0200e0;
+        public static final int scrubber_control_focused_holo=0x7f0200e1;
+        public static final int scrubber_control_normal_holo=0x7f0200e2;
+        public static final int scrubber_control_pressed_holo=0x7f0200e3;
+        public static final int scrubber_control_selector_holo_light=0x7f0200e4;
+        public static final int scrubber_primary_holo=0x7f0200e5;
+        public static final int scrubber_progress_horizontal_holo_light=0x7f0200e6;
+        public static final int scrubber_secondary_holo=0x7f0200e7;
+        public static final int scrubber_track_holo_light=0x7f0200e8;
+        public static final int selectable_background_orange=0x7f0200e9;
+        public static final int spinner_ab_default_orange=0x7f0200ea;
+        public static final int spinner_ab_disabled_orange=0x7f0200eb;
+        public static final int spinner_ab_focused_orange=0x7f0200ec;
+        public static final int spinner_ab_pressed_orange=0x7f0200ed;
+        public static final int spinner_background_ab_orange=0x7f0200ee;
+        public static final int spinner_background_holo_light=0x7f0200ef;
+        public static final int spinner_default_holo_light=0x7f0200f0;
+        public static final int spinner_disabled_holo_light=0x7f0200f1;
+        public static final int spinner_focused_holo_light=0x7f0200f2;
+        public static final int spinner_pressed_holo_light=0x7f0200f3;
+        public static final int tab_indicator_ab_orange=0x7f0200f4;
+        public static final int tab_selected_focused_orange=0x7f0200f5;
+        public static final int tab_selected_orange=0x7f0200f6;
+        public static final int tab_selected_pressed_orange=0x7f0200f7;
+        public static final int tab_unselected_focused_orange=0x7f0200f8;
+        public static final int tab_unselected_orange=0x7f0200f9;
+        public static final int tab_unselected_pressed_orange=0x7f0200fa;
+        public static final int textfield_activated_holo_light=0x7f0200fb;
+        public static final int textfield_activated_holo_light_blue=0x7f0200fc;
+        public static final int textfield_default_holo_light=0x7f0200fd;
+        public static final int textfield_default_holo_light_blue=0x7f0200fe;
+        public static final int textfield_disabled_focused_holo_light=0x7f0200ff;
+        public static final int textfield_disabled_focused_holo_light_blue=0x7f020100;
+        public static final int textfield_disabled_holo_light=0x7f020101;
+        public static final int textfield_disabled_holo_light_blue=0x7f020102;
+        public static final int textfield_focused_holo_light=0x7f020103;
+        public static final int textfield_focused_holo_light_blue=0x7f020104;
     }
     public static final class id {
-        public static final int abs__action_bar=0x7f090023;
-        public static final int abs__action_bar_container=0x7f090022;
-        public static final int abs__action_bar_subtitle=0x7f090014;
-        public static final int abs__action_bar_title=0x7f090013;
-        public static final int abs__action_context_bar=0x7f090024;
+        public static final int abs__action_bar=0x7f090026;
+        public static final int abs__action_bar_container=0x7f090025;
+        public static final int abs__action_bar_subtitle=0x7f090017;
+        public static final int abs__action_bar_title=0x7f090016;
+        public static final int abs__action_context_bar=0x7f090027;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesActionBarSherlockActionbarsherlockUnspecified.aar/res/values/values.xml 
          */
         public static final int abs__action_menu_divider=0x7f09000a;
         public static final int abs__action_menu_presenter=0x7f09000b;
-        public static final int abs__action_mode_bar=0x7f090028;
-        public static final int abs__action_mode_bar_stub=0x7f090027;
-        public static final int abs__action_mode_close_button=0x7f090017;
-        public static final int abs__activity_chooser_view_content=0x7f090018;
-        public static final int abs__checkbox=0x7f09001f;
-        public static final int abs__content=0x7f090025;
-        public static final int abs__default_activity_button=0x7f09001b;
-        public static final int abs__expand_activities_button=0x7f090019;
+        public static final int abs__action_mode_bar=0x7f09002b;
+        public static final int abs__action_mode_bar_stub=0x7f09002a;
+        public static final int abs__action_mode_close_button=0x7f09001a;
+        public static final int abs__activity_chooser_view_content=0x7f09001b;
+        public static final int abs__checkbox=0x7f090022;
+        public static final int abs__content=0x7f090028;
+        public static final int abs__default_activity_button=0x7f09001e;
+        public static final int abs__expand_activities_button=0x7f09001c;
         public static final int abs__home=0x7f09000c;
-        public static final int abs__icon=0x7f09001d;
-        public static final int abs__image=0x7f09001a;
-        public static final int abs__imageButton=0x7f090015;
-        public static final int abs__list_item=0x7f09001c;
+        public static final int abs__icon=0x7f090020;
+        public static final int abs__image=0x7f09001d;
+        public static final int abs__imageButton=0x7f090018;
+        public static final int abs__list_item=0x7f09001f;
         public static final int abs__progress_circular=0x7f09000d;
         public static final int abs__progress_horizontal=0x7f09000e;
-        public static final int abs__radio=0x7f090020;
-        public static final int abs__search_badge=0x7f09002b;
-        public static final int abs__search_bar=0x7f09002a;
-        public static final int abs__search_button=0x7f09002c;
-        public static final int abs__search_close_btn=0x7f090031;
-        public static final int abs__search_edit_frame=0x7f09002d;
-        public static final int abs__search_go_btn=0x7f090033;
-        public static final int abs__search_mag_icon=0x7f09002e;
-        public static final int abs__search_plate=0x7f09002f;
-        public static final int abs__search_src_text=0x7f090030;
-        public static final int abs__search_voice_btn=0x7f090034;
-        public static final int abs__shortcut=0x7f090021;
-        public static final int abs__split_action_bar=0x7f090026;
-        public static final int abs__submit_area=0x7f090032;
-        public static final int abs__textButton=0x7f090016;
-        public static final int abs__title=0x7f09001e;
+        public static final int abs__radio=0x7f090023;
+        public static final int abs__search_badge=0x7f09002e;
+        public static final int abs__search_bar=0x7f09002d;
+        public static final int abs__search_button=0x7f09002f;
+        public static final int abs__search_close_btn=0x7f090034;
+        public static final int abs__search_edit_frame=0x7f090030;
+        public static final int abs__search_go_btn=0x7f090036;
+        public static final int abs__search_mag_icon=0x7f090031;
+        public static final int abs__search_plate=0x7f090032;
+        public static final int abs__search_src_text=0x7f090033;
+        public static final int abs__search_voice_btn=0x7f090037;
+        public static final int abs__shortcut=0x7f090024;
+        public static final int abs__split_action_bar=0x7f090029;
+        public static final int abs__submit_area=0x7f090035;
+        public static final int abs__textButton=0x7f090019;
+        public static final int abs__title=0x7f090021;
         public static final int abs__up=0x7f09000f;
-        public static final int action_add_exam=0x7f090084;
-        public static final int action_settings=0x7f090086;
-        public static final int action_sort=0x7f090085;
-        public static final int ampm_label=0x7f090083;
-        public static final int cancel_button=0x7f090043;
-        public static final int cbCustom=0x7f090060;
-        public static final int color=0x7f09003d;
-        public static final int content_frame=0x7f09003b;
-        public static final int date=0x7f090048;
+        public static final int action_add_exam=0x7f090088;
+        public static final int action_settings=0x7f09008a;
+        public static final int action_sort=0x7f090089;
+        public static final int ampm_label=0x7f090087;
+        public static final int cancel_button=0x7f090046;
+        public static final int cbCustom=0x7f090064;
+        public static final int color=0x7f090040;
+        /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/ids.xml 
+         */
+        public static final int color_picker=0x7f090010;
+        public static final int color_picker_checkmark=0x7f090011;
+        public static final int color_picker_swatch=0x7f090012;
+        public static final int content_frame=0x7f09003e;
+        public static final int date=0x7f09004b;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
          */
-        public static final int date_keyboard=0x7f090010;
-        public static final int date_month_int=0x7f090011;
-        public static final int date_picker=0x7f090041;
-        public static final int date_text=0x7f090046;
-        public static final int decimal=0x7f090078;
-        public static final int decimal_separator=0x7f090077;
-        public static final int delete=0x7f09004a;
-        public static final int dialog_subject_current_average=0x7f09004e;
-        public static final int dialog_subject_gradeM_1=0x7f090056;
-        public static final int dialog_subject_gradeM_2=0x7f090057;
-        public static final int dialog_subject_gradeM_3=0x7f090058;
-        public static final int dialog_subject_gradeM_4=0x7f090059;
-        public static final int dialog_subject_gradeS_1=0x7f090051;
-        public static final int dialog_subject_gradeS_2=0x7f090052;
-        public static final int dialog_subject_gradeS_3=0x7f090053;
-        public static final int dialog_subject_gradeS_4=0x7f090054;
-        public static final int dialog_subject_grades=0x7f090050;
-        public static final int dialog_subject_gradesM=0x7f090055;
-        public static final int dialog_subject_settings=0x7f09004f;
-        public static final int dialog_subject_title=0x7f09004d;
+        public static final int date_keyboard=0x7f090013;
+        public static final int date_month_int=0x7f090014;
+        public static final int date_picker=0x7f090044;
+        public static final int date_text=0x7f090049;
+        public static final int decimal=0x7f09007c;
+        public static final int decimal_separator=0x7f09007b;
+        public static final int delete=0x7f09004d;
+        public static final int dialog_exam_title=0x7f090050;
+        public static final int dialog_subject_current_average=0x7f090052;
+        public static final int dialog_subject_gradeM_1=0x7f09005a;
+        public static final int dialog_subject_gradeM_2=0x7f09005b;
+        public static final int dialog_subject_gradeM_3=0x7f09005c;
+        public static final int dialog_subject_gradeM_4=0x7f09005d;
+        public static final int dialog_subject_gradeS_1=0x7f090055;
+        public static final int dialog_subject_gradeS_2=0x7f090056;
+        public static final int dialog_subject_gradeS_3=0x7f090057;
+        public static final int dialog_subject_gradeS_4=0x7f090058;
+        public static final int dialog_subject_grades=0x7f090054;
+        public static final int dialog_subject_gradesM=0x7f090059;
+        public static final int dialog_subject_settings=0x7f090053;
+        public static final int dialog_subject_title=0x7f090051;
         public static final int disableHome=0x7f090008;
-        public static final int divider=0x7f090037;
-        public static final int divider_1=0x7f090042;
-        public static final int divider_2=0x7f090044;
-        public static final int drawer_layout=0x7f09003a;
-        public static final int editTextInput=0x7f090063;
-        public static final int edit_query=0x7f090029;
-        public static final int error=0x7f09007b;
-        public static final int first=0x7f09006e;
-        public static final int fourth=0x7f090071;
-        public static final int graph=0x7f09005a;
-        public static final int hms_picker=0x7f090064;
-        public static final int hms_text=0x7f090065;
+        public static final int divider=0x7f09003a;
+        public static final int divider_1=0x7f090045;
+        public static final int divider_2=0x7f090047;
+        public static final int drawer_layout=0x7f09003d;
+        public static final int editTextInput=0x7f090067;
+        public static final int edit_query=0x7f09002c;
+        public static final int error=0x7f09007f;
+        public static final int first=0x7f090072;
+        public static final int fourth=0x7f090075;
+        public static final int graph=0x7f09005e;
+        public static final int hms_picker=0x7f090068;
+        public static final int hms_text=0x7f090069;
         public static final int homeAsUp=0x7f090005;
-        public static final int horizontal_scroll_view=0x7f090074;
-        public static final int hours_label=0x7f090067;
-        public static final int hours_ones=0x7f090066;
-        public static final int hours_seperator=0x7f090082;
-        public static final int hours_tens=0x7f090081;
-        public static final int icAverage=0x7f09003f;
-        public static final int key_left=0x7f09007c;
-        public static final int key_middle=0x7f09007d;
-        public static final int key_right=0x7f09007e;
-        public static final int keyboard_indicator=0x7f09004b;
-        public static final int keyboard_pager=0x7f09004c;
-        public static final int label=0x7f090079;
-        public static final int left_drawer=0x7f09003c;
+        public static final int horizontal_scroll_view=0x7f090078;
+        public static final int hours_label=0x7f09006b;
+        public static final int hours_ones=0x7f09006a;
+        public static final int hours_seperator=0x7f090086;
+        public static final int hours_tens=0x7f090085;
+        public static final int icAverage=0x7f090042;
+        public static final int key_left=0x7f090080;
+        public static final int key_middle=0x7f090081;
+        public static final int key_right=0x7f090082;
+        public static final int keyboard_indicator=0x7f09004e;
+        public static final int keyboard_pager=0x7f09004f;
+        public static final int label=0x7f09007d;
+        public static final int left_drawer=0x7f09003f;
         public static final int listMode=0x7f090001;
-        public static final int minus_label=0x7f09007a;
-        public static final int minutes_label=0x7f09006a;
-        public static final int minutes_ones=0x7f090069;
-        public static final int minutes_tens=0x7f090068;
-        public static final int month=0x7f090047;
-        public static final int next_button=0x7f090039;
+        public static final int minus_label=0x7f09007e;
+        public static final int minutes_label=0x7f09006e;
+        public static final int minutes_ones=0x7f09006d;
+        public static final int minutes_tens=0x7f09006c;
+        public static final int month=0x7f09004a;
+        public static final int next_button=0x7f09003c;
         public static final int normal=0x7f090000;
-        public static final int number=0x7f090076;
-        public static final int number_picker=0x7f090072;
-        public static final int number_text=0x7f090075;
-        public static final int number_view_container=0x7f090073;
-        public static final int numbers_key=0x7f090012;
-        public static final int pager_strip=0x7f090035;
-        public static final int prev_button=0x7f090038;
-        public static final int sbAllocation=0x7f09005f;
-        public static final int second=0x7f09006f;
-        public static final int seconds_label=0x7f09006d;
-        public static final int seconds_ones=0x7f09006c;
-        public static final int seconds_tens=0x7f09006b;
-        public static final int set_button=0x7f090045;
+        public static final int number=0x7f09007a;
+        public static final int number_picker=0x7f090076;
+        public static final int number_text=0x7f090079;
+        public static final int number_view_container=0x7f090077;
+        public static final int numbers_key=0x7f090015;
+        public static final int pager_strip=0x7f090038;
+        public static final int prev_button=0x7f09003b;
+        public static final int sbAllocation=0x7f090063;
+        public static final int second=0x7f090073;
+        public static final int seconds_label=0x7f090071;
+        public static final int seconds_ones=0x7f090070;
+        public static final int seconds_tens=0x7f09006f;
+        public static final int set_button=0x7f090048;
         public static final int showCustom=0x7f090007;
         public static final int showHome=0x7f090004;
         public static final int showTitle=0x7f090006;
-        public static final int subject_current_average=0x7f090040;
+        public static final int subject_current_average=0x7f090043;
         public static final int tabMode=0x7f090002;
-        public static final int text=0x7f09003e;
-        public static final int third=0x7f090070;
-        public static final int time_picker=0x7f09007f;
-        public static final int timer_time_text=0x7f090080;
-        public static final int tvAllocation=0x7f09005b;
-        public static final int tvAllocation1=0x7f09005c;
-        public static final int tvAllocationM=0x7f09005e;
-        public static final int tvAllocationS=0x7f09005d;
+        public static final int text=0x7f090041;
+        public static final int third=0x7f090074;
+        public static final int time_picker=0x7f090083;
+        public static final int timer_time_text=0x7f090084;
+        public static final int tvAllocation=0x7f09005f;
+        public static final int tvAllocation1=0x7f090060;
+        public static final int tvAllocationM=0x7f090062;
+        public static final int tvAllocationS=0x7f090061;
         public static final int useLogo=0x7f090003;
-        public static final int view_pager=0x7f090036;
+        public static final int view_pager=0x7f090039;
         public static final int wrap_content=0x7f090009;
-        public static final int year_label=0x7f090049;
-        public static final int your_email=0x7f090062;
-        public static final int your_name=0x7f090061;
+        public static final int year_label=0x7f09004c;
+        public static final int your_email=0x7f090066;
+        public static final int your_name=0x7f090065;
     }
     public static final class integer {
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesActionBarSherlockActionbarsherlockUnspecified.aar/res/values/values.xml 
@@ -1317,32 +1335,36 @@ containing a value of this type.
         public static final int activity_main=0x7f030016;
         public static final int activity_overlay=0x7f030017;
         public static final int card_list_item=0x7f030018;
-        public static final int date_picker_dialog=0x7f030019;
-        public static final int date_picker_view=0x7f03001a;
-        public static final int dialog_subject=0x7f03001b;
-        public static final int dialog_subject_allocation=0x7f03001c;
-        public static final int drawer_list_item=0x7f03001d;
-        public static final int fragment_graph=0x7f03001e;
-        public static final int fragment_page=0x7f03001f;
-        public static final int fragment_page_customer_info=0x7f030020;
-        public static final int fragment_page_text=0x7f030021;
-        public static final int fragment_subjects=0x7f030022;
-        public static final int hms_picker_dialog=0x7f030023;
-        public static final int hms_picker_view=0x7f030024;
-        public static final int keyboard=0x7f030025;
-        public static final int keyboard_right_drawable=0x7f030026;
-        public static final int keyboard_text=0x7f030027;
-        public static final int list_item_review=0x7f030028;
-        public static final int number_picker_dialog=0x7f030029;
-        public static final int number_picker_view=0x7f03002a;
-        public static final int sherlock_spinner_dropdown_item=0x7f03002b;
-        public static final int sherlock_spinner_item=0x7f03002c;
-        public static final int three_keys_view=0x7f03002d;
-        public static final int three_keys_view_leftright=0x7f03002e;
-        public static final int three_keys_view_right_drawable=0x7f03002f;
-        public static final int three_keys_view_text=0x7f030030;
-        public static final int time_picker_dialog=0x7f030031;
-        public static final int time_picker_view=0x7f030032;
+        public static final int color_picker_swatch=0x7f030019;
+        public static final int date_picker_dialog=0x7f03001a;
+        public static final int date_picker_view=0x7f03001b;
+        public static final int dialog_exam_add=0x7f03001c;
+        public static final int dialog_subject=0x7f03001d;
+        public static final int dialog_subject_allocation=0x7f03001e;
+        public static final int drawer_list_item=0x7f03001f;
+        public static final int fragment_abitur=0x7f030020;
+        public static final int fragment_grades=0x7f030021;
+        public static final int fragment_page=0x7f030022;
+        public static final int fragment_page_customer_info=0x7f030023;
+        public static final int fragment_page_text=0x7f030024;
+        public static final int fragment_stats=0x7f030025;
+        public static final int fragment_subjects=0x7f030026;
+        public static final int hms_picker_dialog=0x7f030027;
+        public static final int hms_picker_view=0x7f030028;
+        public static final int keyboard=0x7f030029;
+        public static final int keyboard_right_drawable=0x7f03002a;
+        public static final int keyboard_text=0x7f03002b;
+        public static final int list_item_review=0x7f03002c;
+        public static final int number_picker_dialog=0x7f03002d;
+        public static final int number_picker_view=0x7f03002e;
+        public static final int sherlock_spinner_dropdown_item=0x7f03002f;
+        public static final int sherlock_spinner_item=0x7f030030;
+        public static final int three_keys_view=0x7f030031;
+        public static final int three_keys_view_leftright=0x7f030032;
+        public static final int three_keys_view_right_drawable=0x7f030033;
+        public static final int three_keys_view_text=0x7f030034;
+        public static final int time_picker_dialog=0x7f030035;
+        public static final int time_picker_view=0x7f030036;
     }
     public static final class menu {
         public static final int activity_main=0x7f0e0000;
@@ -1367,67 +1389,71 @@ containing a value of this type.
         public static final int action_settings=0x7f0c000e;
         public static final int action_sort=0x7f0c000f;
         public static final int app_name=0x7f0c0010;
-        public static final int drawer_close=0x7f0c0011;
-        public static final int drawer_open=0x7f0c0012;
-        public static final int finish=0x7f0c0013;
+        public static final int color_picker_default_title=0x7f0c0011;
+        public static final int color_swatch_description=0x7f0c0012;
+        public static final int color_swatch_description_selected=0x7f0c0013;
+        public static final int dialog_exam_add_title=0x7f0c0014;
+        public static final int drawer_close=0x7f0c0015;
+        public static final int drawer_open=0x7f0c0016;
+        public static final int finish=0x7f0c0017;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml 
          */
-        public static final int hint_your_email=0x7f0c0014;
-        public static final int hint_your_name=0x7f0c0015;
+        public static final int hint_your_email=0x7f0c0018;
+        public static final int hint_your_name=0x7f0c0019;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values-ca/values.xml 
  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values-es/values.xml 
          */
-        public static final int hms_picker_hours_label=0x7f0c0016;
-        public static final int hms_picker_minutes_label=0x7f0c0017;
-        public static final int hms_picker_seconds_label=0x7f0c0018;
-        public static final int hours_label=0x7f0c0019;
-        public static final int hours_label_description=0x7f0c001a;
+        public static final int hms_picker_hours_label=0x7f0c001a;
+        public static final int hms_picker_minutes_label=0x7f0c001b;
+        public static final int hms_picker_seconds_label=0x7f0c001c;
+        public static final int hours_label=0x7f0c001d;
+        public static final int hours_label_description=0x7f0c001e;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml 
          */
-        public static final int label_your_email=0x7f0c001b;
-        public static final int label_your_name=0x7f0c001c;
+        public static final int label_your_email=0x7f0c001f;
+        public static final int label_your_name=0x7f0c0020;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
          */
-        public static final int max_error=0x7f0c001d;
-        public static final int min_error=0x7f0c001e;
-        public static final int min_max_error=0x7f0c001f;
-        public static final int minutes_label=0x7f0c0020;
-        public static final int minutes_label_description=0x7f0c0021;
+        public static final int max_error=0x7f0c0021;
+        public static final int min_error=0x7f0c0022;
+        public static final int min_max_error=0x7f0c0023;
+        public static final int minutes_label=0x7f0c0024;
+        public static final int minutes_label_description=0x7f0c0025;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml 
          */
-        public static final int next=0x7f0c0022;
+        public static final int next=0x7f0c0026;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
          */
-        public static final int number_delete=0x7f0c0023;
-        public static final int number_picker_minus_label=0x7f0c0024;
-        public static final int number_picker_plus_minus=0x7f0c0025;
-        public static final int number_picker_seperator=0x7f0c0026;
-        public static final int picker_cancel=0x7f0c0027;
-        public static final int picker_set=0x7f0c0028;
+        public static final int number_delete=0x7f0c0027;
+        public static final int number_picker_minus_label=0x7f0c0028;
+        public static final int number_picker_plus_minus=0x7f0c0029;
+        public static final int number_picker_seperator=0x7f0c002a;
+        public static final int picker_cancel=0x7f0c002b;
+        public static final int picker_set=0x7f0c002c;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml 
          */
-        public static final int prefs_main=0x7f0c0029;
-        public static final int prefs_setup=0x7f0c002a;
-        public static final int prev=0x7f0c002b;
-        public static final int prim_subject_pl=0x7f0c002c;
-        public static final int review=0x7f0c002d;
-        public static final int sec_subject_pl=0x7f0c002e;
+        public static final int prefs_main=0x7f0c002d;
+        public static final int prefs_setup=0x7f0c002e;
+        public static final int prev=0x7f0c002f;
+        public static final int prim_subject_pl=0x7f0c0030;
+        public static final int review=0x7f0c0031;
+        public static final int sec_subject_pl=0x7f0c0032;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
          */
-        public static final int seconds_label=0x7f0c002f;
-        public static final int seconds_label_description=0x7f0c0030;
+        public static final int seconds_label=0x7f0c0033;
+        public static final int seconds_label_description=0x7f0c0034;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml 
          */
-        public static final int submit_confirm_button=0x7f0c0031;
-        public static final int submit_confirm_message=0x7f0c0032;
+        public static final int submit_confirm_button=0x7f0c0035;
+        public static final int submit_confirm_message=0x7f0c0036;
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml 
          */
-        public static final int time_picker_00_label=0x7f0c0033;
-        public static final int time_picker_30_label=0x7f0c0034;
-        public static final int time_picker_ampm_label=0x7f0c0035;
-        public static final int time_picker_time_seperator=0x7f0c0036;
-        public static final int timer_delete=0x7f0c0037;
+        public static final int time_picker_00_label=0x7f0c0037;
+        public static final int time_picker_30_label=0x7f0c0038;
+        public static final int time_picker_ampm_label=0x7f0c0039;
+        public static final int time_picker_time_seperator=0x7f0c003a;
+        public static final int timer_delete=0x7f0c003b;
     }
     public static final class style {
         /**  From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/styles.xml 

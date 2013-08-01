@@ -4,6 +4,7 @@
     <string-array name="drawer_menu_items">
         <item>Fächer</item>
         <item>Klausuren</item>
+        <item>Abitur</item>
         <item>Statistiken</item>
     </string-array>
 

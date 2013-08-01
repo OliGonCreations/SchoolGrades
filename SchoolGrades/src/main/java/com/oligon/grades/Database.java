@@ -95,11 +95,12 @@ public class Database extends SQLiteOpenHelper {
         db.close();
     }
 
-    public void updateAllocation(String subject, int s, int m) {
+    public void updateAllocation(String subject, int s, int m, int color) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(KEY_S, s);
         values.put(KEY_M, m);
+        values.put(KEY_COLOR, color);
         db.update(TABLE_GRADES, values, KEY_SUBJECT + "=?", new String[]{subject});
         db.close();
     }
@@ -131,12 +132,13 @@ public class Database extends SQLiteOpenHelper {
     }
 
     public int[] getAllocation(String subject) {
-        int[] allocation = new int[2];
+        int[] allocation = new int[3];
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_GRADES, null, KEY_SUBJECT + "=?", new String[]{subject}, null, null, null, null);
         if (cursor.moveToFirst()) {
             allocation[0] = cursor.getInt(4);
             allocation[1] = cursor.getInt(5);
+            allocation[2] = cursor.getInt(2);
         }
         if (allocation[0] == 0 && allocation[1] == 0) {
             allocation[0] = 50;
@@ -264,7 +266,7 @@ public class Database extends SQLiteOpenHelper {
                 if (sA > 0 && mA > 0) {
                     s = s / sA;
                     m = m / mA;
-                    list.add(new BigDecimal(Float.toString((s * allocationS + m * allocationM) / (allocationS + allocationM))).setScale(1, BigDecimal.ROUND_HALF_UP).toString());
+                    list.add(new BigDecimal(Float.toString((s * allocationS + m * allocationM) / (allocationS + allocationM))).setScale(1, BigDecimal.ROUND_HALF_UP).stripTrailingZeros().toString());
                 } else list.add("-");
             } while (cursor.moveToNext());
         }

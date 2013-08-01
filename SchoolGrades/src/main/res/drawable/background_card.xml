@@ -3,26 +3,27 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item>
+        <shape  android:shape="rectangle">
 
+            <solid android:color="#ffd2d2d2" />
+            <corners android:topLeftRadius="1.0dip"
+                     android:topRightRadius="1.0dip"
+                     android:bottomLeftRadius="1.0dip"
+                     android:bottomRightRadius="1.0dip"  />
+
+        </shape>
+    </item>
+
+    <item android:bottom="2px">
         <shape android:shape="rectangle">
-
             <solid android:color="@android:color/white" />
-
-            <stroke android:width="1.0px"
+            <stroke android:width="2.0px"
                     android:color="#ffdddddd" />
-
             <corners android:topLeftRadius="1.0dip"
                      android:topRightRadius="1.0dip"
                      android:bottomLeftRadius="1.0dip"
                      android:bottomRightRadius="1.0dip" />
-
-            <!--<padding android:left="8.0dip"
-                     android:top="8.0dip"
-                     android:right="8.0dip"
-                     android:bottom="8.0dip" />-->
-
         </shape>
-
     </item>
 
 </layer-list>

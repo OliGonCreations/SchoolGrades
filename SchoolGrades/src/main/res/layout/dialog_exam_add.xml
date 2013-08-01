@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="8dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:id="@+id/dialog_exam_title"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="32sp"
+            android:textColor="#707070"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="18dp"/>
+
+    <View
+            android:layout_below="@+id/dialog_exam_title"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/main_orange"/>
+
+</RelativeLayout>

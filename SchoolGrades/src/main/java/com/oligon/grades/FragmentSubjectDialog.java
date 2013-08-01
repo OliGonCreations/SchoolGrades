@@ -64,6 +64,7 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
         graph = (LineGraph) view.findViewById(R.id.graph);
         graph.setOnPointClickedListener(this);
         gradeAverage = (TextView) view.findViewById(R.id.dialog_subject_current_average);
+        gradeAverage.setText("-");
         grade1s = (EditText) view.findViewById(R.id.dialog_subject_gradeS_1);
         grade2s = (EditText) view.findViewById(R.id.dialog_subject_gradeS_2);
         grade3s = (EditText) view.findViewById(R.id.dialog_subject_gradeS_3);
