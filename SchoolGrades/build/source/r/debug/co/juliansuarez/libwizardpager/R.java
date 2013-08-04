@@ -24,26 +24,26 @@ public final class R {
 		public static final int step_pager_tab_width = 0x7f0a0022;
 	}
 	public static final class id {
-		public static final int editTextInput = 0x7f090067;
-		public static final int your_email = 0x7f090066;
-		public static final int your_name = 0x7f090065;
+		public static final int editTextInput = 0x7f090073;
+		public static final int your_email = 0x7f090072;
+		public static final int your_name = 0x7f090071;
 	}
 	public static final class layout {
-		public static final int fragment_page = 0x7f030022;
-		public static final int fragment_page_customer_info = 0x7f030023;
-		public static final int fragment_page_text = 0x7f030024;
-		public static final int list_item_review = 0x7f03002c;
+		public static final int fragment_page = 0x7f030023;
+		public static final int fragment_page_customer_info = 0x7f030024;
+		public static final int fragment_page_text = 0x7f030025;
+		public static final int list_item_review = 0x7f03002d;
 	}
 	public static final class string {
-		public static final int hint_your_email = 0x7f0c0018;
-		public static final int hint_your_name = 0x7f0c0019;
-		public static final int label_your_email = 0x7f0c001f;
-		public static final int label_your_name = 0x7f0c0020;
-		public static final int review = 0x7f0c0031;
+		public static final int hint_your_email = 0x7f0c001b;
+		public static final int hint_your_name = 0x7f0c001c;
+		public static final int label_your_email = 0x7f0c0022;
+		public static final int label_your_name = 0x7f0c0023;
+		public static final int review = 0x7f0c0035;
 	}
 	public static final class style {
-		public static final int WizardFormLabel = 0x7f0d0079;
-		public static final int WizardPageContainer = 0x7f0d007a;
-		public static final int WizardPageTitle = 0x7f0d007b;
+		public static final int WizardFormLabel = 0x7f0d007c;
+		public static final int WizardPageContainer = 0x7f0d007d;
+		public static final int WizardPageTitle = 0x7f0d007e;
 	}
 }

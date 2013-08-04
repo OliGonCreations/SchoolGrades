@@ -17,6 +17,7 @@ dependencies {
     compile project(':libraries:WizardPager:LibWizardPager')
     compile project(':libraries:holographlibrary:HoloGraphLibrary')
     compile project(':libraries:android-betterpickers:library')
+    compile project(':libraries:UndoBar:library')
     compile 'com.android.support:support-v4:13.0.0'
 }
 

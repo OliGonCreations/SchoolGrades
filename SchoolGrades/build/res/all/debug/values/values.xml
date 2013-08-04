@@ -29,31 +29,18 @@
         <item>Mathematik</item>
         <item>Englisch</item>
         <item>Französisch</item>
+        <item>Latein</item>
         <item>Physik</item>
         <item>Chemie</item>
         <item>Biologie</item>
         <item>Geschichte</item>
+        <item>Gemeinschaftskunde</item>
+        <item>Geographie</item>
         <item>Wirtschaft</item>
         <item>Sport</item>
         <item>Musik</item>
         <item>Bildende Kunst</item>
     </string-array>
-
-    <array name="prim_subjects_colors">
-        <item>@color/main_orange</item>
-        <item>@color/main_red</item>
-        <item>@color/main_blue</item>
-        <item>@color/main_orange</item>
-        <item>@color/main_green</item>
-        <item>@color/main_blue</item>
-        <item>@color/main_purple</item>
-        <item>@color/main_red</item>
-        <item>@color/main_orange</item>
-        <item>@color/main_blue</item>
-        <item>@color/main_green</item>
-        <item>@color/main_purple</item>
-    </array>
-
     <string-array name="sec_subjects">
         <item>Englisch</item>
         <item>Französisch</item>
@@ -61,10 +48,23 @@
         <item>Chemie</item>
         <item>Biologie</item>
         <item>Geschichte</item>
+        <item>Gemeinschaftskunde</item>
+        <item>Geographie</item>
         <item>Wirtschaft</item>
         <item>Sport</item>
+        <item>Religionslehre</item>
         <item>Musik</item>
         <item>Bildende Kunst</item>
+        <item>Informatik</item>
+        <item>Astronomie</item>
+        <item>Literatur</item>
+        <item>Psychologie</item>
+        <item>Philosophie</item>
+    </string-array>
+    <string-array name="sort_types">
+        <item>Hauptfach</item>
+        <item>Alphabet</item>
+        <item>Durchschnitt</item>
     </string-array>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesActionBarSherlockActionbarsherlockUnspecified.aar/res/values/values.xml -->
     <attr name="background" format="reference|color" />
@@ -93,8 +93,8 @@
     <color name="custom_divider_color">#ffffffff</color>
     <color name="custom_key_background">#00000000</color>
     <color name="custom_key_background_pressed">#ffcc6600</color>
-    <color name="custom_keyboard_indicator_color">#ffcc6600</color>
-    <color name="custom_text_color_disabled">#ffb2b2b2</color>
+    <color name="custom_keyboard_indicator_color">#ffed8000</color>
+    <color name="custom_text_color_disabled">#99FFFFFF</color>
     <color name="custom_text_color_normal">#ffffffff</color>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml -->
     <color name="default_button_background_dark">#00000000</color>
@@ -615,7 +615,7 @@
     <dimen name="color_swatch_small">48.0dip</dimen>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml -->
     <dimen name="date_viewpager_height">254dip</dimen>
-    <dimen name="dialog_button_font_size">14sp</dimen>
+    <dimen name="dialog_button_font_size">15sp</dimen>
     <dimen name="dialpad_font_size">48sp</dimen>
     <dimen name="dialpad_font_size_ampm">24sp</dimen>
     <dimen name="label_font_size">14sp</dimen>
@@ -669,6 +669,7 @@
     <string name="abs__shareactionprovider_share_with_application">Share with <ns1:g id="application_name" example="Bluetooth">%s</ns1:g></string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml -->
     <string name="action_add_exam">Klausur hinzufügen</string>
+    <string name="action_delete">Löschen</string>
     <string name="action_settings">Settings</string>
     <string name="action_sort">Sortieren nach</string>
     <string name="app_name">SchoolGrades</string>
@@ -676,9 +677,11 @@
     <string name="color_swatch_description">Color %1$d</string>
     <string name="color_swatch_description_selected">Color %1$d selected</string>
     <string name="dialog_exam_add_title">Klausur hinzufügen</string>
+    <string name="dialog_sort_title">Sortieren</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="finish">Fertig</string>
+    <string name="hint_exam_extra">Notiz</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml -->
     <string name="hint_your_email">Optional</string>
     <string name="hint_your_name">e.g. Larry</string>
@@ -711,6 +714,9 @@
     <string name="prefs_setup">Fächer bearbeiten</string>
     <string name="prev">Zurück</string>
     <string name="prim_subject_pl">Kernfächer</string>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesUndoBarLibraryUnspecified.aar/res/values/values.xml -->
+    <string name="retry">Retry</string>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml -->
     <string name="review">Ändern</string>
     <string name="sec_subject_pl">Nebenfächer</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml -->
@@ -725,6 +731,10 @@
     <string name="time_picker_ampm_label">--</string>
     <string name="time_picker_time_seperator">:</string>
     <string name="timer_delete">Delete</string>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesUndoBarLibraryUnspecified.aar/res/values/values.xml -->
+    <string name="undo">Undo</string>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml -->
+    <string name="undo_message">Wiederherstellen</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/styles.xml -->
     <style name="ActionBar.Solid.Orange" parent="Widget.Sherlock.Light.ActionBar.Solid">
         <item name="background">@drawable/ab_solid_orange</item>
@@ -732,11 +742,13 @@
         <item name="backgroundSplit">@drawable/ab_bottom_solid_orange</item>
         <item name="progressBarStyle">@style/ProgressBar.Orange</item>
         <item name="titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="icon">@drawable/ic_launcher</item>
         <item name="android:background">@drawable/ab_solid_orange</item>
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_orange</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_orange</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Orange</item>
         <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
     </style>
 
     <style name="ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
@@ -847,8 +859,8 @@
 
     <style name="CustomBetterPickerTheme">
         <item name="bpDialogBackground">@drawable/custom_dialog_background</item>
-        <item name="bpTitleColor">@color/custom_keyboard_indicator_color</item>
-        <item name="bpTextColor">@android:color/white</item>
+        <item name="bpTitleColor">@android:color/white</item>
+        <item name="bpTextColor">@color/custom_text_color</item>
         <item name="bpDeleteIcon">@drawable/ic_backspace_custom</item>
         <item name="bpCheckIcon">@drawable/ic_check_custom</item>
         <item name="bpKeyBackground">@drawable/key_background_custom</item>
@@ -1315,6 +1327,45 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:background">#22000000</item>
+    </style>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesUndoBarLibraryUnspecified.aar/res/values/values.xml -->
+    <style name="UndoBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">150dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/undobar</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="UndoBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">@drawable/undobar_button</item>
+        <item name="android:drawableLeft">@drawable/ic_undobar_undo</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textColor">#fff</item>
+        <item name="android:text">"Undo"</item>
+    </style>
+
+    <style name="UndoBarMessage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">#fff</item>
     </style>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesActionBarSherlockActionbarsherlockUnspecified.aar/res/values/values.xml -->
     <style name="Widget" />

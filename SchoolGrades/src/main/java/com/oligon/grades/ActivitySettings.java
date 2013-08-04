@@ -17,8 +17,6 @@ public class ActivitySettings extends SherlockPreferenceActivity {
 
     @Override
     public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu) {
-        getSupportMenuInflater().inflate(R.menu.activity_main, menu);
-        menu.findItem(R.id.action_settings).setVisible(false);
         return super.onCreateOptionsMenu(menu);
     }
 

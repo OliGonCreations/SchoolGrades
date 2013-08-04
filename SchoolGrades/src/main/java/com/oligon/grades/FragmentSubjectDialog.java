@@ -25,10 +25,9 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
 
     private static LineGraph graph;
     private static EditText grade1s, grade2s, grade3s, grade4s, grade1m, grade2m, grade3m, grade4m;
-    private static TextView gradeAverage;
+    private static TextView gradeAverage, gradeSAverage, gradeMAverage;
     private static String title;
     private static Resources res;
-    private static Database db;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -36,7 +35,6 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         title = getArguments().getString(FragmentSubjects.KEY_DIALOG_TITLE);
         res = getResources();
-        db = FragmentSubjects.db;
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.dialog_subject, null);
@@ -64,6 +62,8 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
         graph = (LineGraph) view.findViewById(R.id.graph);
         graph.setOnPointClickedListener(this);
         gradeAverage = (TextView) view.findViewById(R.id.dialog_subject_current_average);
+        gradeSAverage = (TextView) view.findViewById(R.id.dialog_subject_current_average_S);
+        gradeMAverage = (TextView) view.findViewById(R.id.dialog_subject_current_average_M);
         gradeAverage.setText("-");
         grade1s = (EditText) view.findViewById(R.id.dialog_subject_gradeS_1);
         grade2s = (EditText) view.findViewById(R.id.dialog_subject_gradeS_2);
@@ -103,28 +103,28 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
     public void onDialogNumberSet(int reference, int number, double decimal, boolean isNegative, double fullNumber) {
         switch (reference) {
             case R.id.dialog_subject_gradeS_1:
-                db.updateGrade(title, 0, number, "s");
+                ActivityMain.db.updateGrade(title, 0, number, "s");
                 break;
             case R.id.dialog_subject_gradeS_2:
-                db.updateGrade(title, 1, number, "s");
+                ActivityMain.db.updateGrade(title, 1, number, "s");
                 break;
             case R.id.dialog_subject_gradeS_3:
-                db.updateGrade(title, 2, number, "s");
+                ActivityMain.db.updateGrade(title, 2, number, "s");
                 break;
             case R.id.dialog_subject_gradeS_4:
-                db.updateGrade(title, 3, number, "s");
+                ActivityMain.db.updateGrade(title, 3, number, "s");
                 break;
             case R.id.dialog_subject_gradeM_1:
-                db.updateGrade(title, 0, number, "m");
+                ActivityMain.db.updateGrade(title, 0, number, "m");
                 break;
             case R.id.dialog_subject_gradeM_2:
-                db.updateGrade(title, 1, number, "m");
+                ActivityMain.db.updateGrade(title, 1, number, "m");
                 break;
             case R.id.dialog_subject_gradeM_3:
-                db.updateGrade(title, 2, number, "m");
+                ActivityMain.db.updateGrade(title, 2, number, "m");
                 break;
             case R.id.dialog_subject_gradeM_4:
-                db.updateGrade(title, 3, number, "m");
+                ActivityMain.db.updateGrade(title, 3, number, "m");
                 break;
         }
         updateValues();
@@ -156,33 +156,47 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
             int[] gradesS
                     ,
                     gradesM;
-            BigDecimal average;
+            BigDecimal average
+                    ,
+                    averageS
+                    ,
+                    averageM;
 
             @Override
             protected Void doInBackground(Void... params) {
-                average = db.getGradeAverage(title);
+                average = ActivityMain.db.getGradeAverage(title);
                 publishProgress(0);
-                gradesS = db.getGradesS(title);
+                averageS = ActivityMain.db.getGradeSAverage(title);
                 publishProgress(1);
-                gradesM = db.getGradesM(title);
+                averageM = ActivityMain.db.getGradeMAverage(title);
                 publishProgress(2);
+                gradesS = ActivityMain.db.getGradesS(title);
+                publishProgress(3);
+                gradesM = ActivityMain.db.getGradesM(title);
+                publishProgress(4);
                 return null;
             }
 
             @Override
             protected void onProgressUpdate(Integer... values) {
                 super.onProgressUpdate(values);
-                if (values[0] == 0 && average.intValue() >= 0) {
+                if (values[0] == 0 && average.intValue() >= 0)
                     gradeAverage.setText(average + "");
-                } else if (values[0] == 1) {
+                else if (values[0] == 1 && averageS.intValue() >= 0)
+                    gradeSAverage.setText(averageS + "");
+                else if (values[0] == 2 && averageM.intValue() >= 0)
+                    gradeMAverage.setText(averageM + "");
+                else if (values[0] == 3) {
                     if (gradesS[0] >= 0)
                         grade1s.setText(gradesS[0] + "");
                     if (gradesS[1] >= 0)
                         grade2s.setText(gradesS[1] + "");
+                    //if (db.isMainSubject(title)) {
                     if (gradesS[2] >= 0)
                         grade3s.setText(gradesS[2] + "");
                     if (gradesS[3] >= 0)
                         grade4s.setText(gradesS[3] + "");
+                    //}
                     graph.removeAllLines();
                     Line l = new Line();
                     LinePoint p;
@@ -198,7 +212,7 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
                         graph.addLine(l);
                     graph.setRangeY(0, 15);
                     graph.setLineToFill(0);
-                } else if (values[0] == 2) {
+                } else if (values[0] == 4) {
                     if (gradesM[0] >= 0)
                         grade1m.setText(gradesM[0] + "");
                     if (gradesM[1] >= 0)

@@ -10,34 +10,25 @@
             android:layout_width="32dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:id="@+id/color"/>
+            android:id="@+id/exam_color"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="28sp"
             android:fontFamily="sans-serif"
-            android:id="@+id/text"
+            android:id="@+id/title"
             android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/color"
+            android:layout_toRightOf="@+id/exam_color"
             android:layout_centerVertical="true"
             android:textColor="@color/text"/>
 
-    <ImageView
-            android:id="@+id/icAverage"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_average"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/subject_current_average"/>
     <TextView
-            android:layout_width="28dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/text"
             android:textSize="14sp"
-            android:gravity="center"
-            android:id="@+id/subject_current_average"
-            android:layout_alignTop="@+id/icAverage"
-            android:layout_alignBottom="@+id/icAverage"
-            android:layout_alignParentRight="true"/>
+            android:id="@+id/exam_date"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
 </RelativeLayout>

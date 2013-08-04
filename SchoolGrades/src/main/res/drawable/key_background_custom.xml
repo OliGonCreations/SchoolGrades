@@ -5,12 +5,12 @@
     <item
             android:state_focused="true"
             android:state_pressed="true"
-            android:drawable="@color/custom_key_background_pressed"/>
+            android:drawable="@color/pressed_orange"/>
 
     <item
             android:state_focused="false"
             android:state_pressed="true"
-            android:drawable="@color/custom_key_background_pressed"/>
+            android:drawable="@color/pressed_orange"/>
 
     <item
             android:state_focused="true"

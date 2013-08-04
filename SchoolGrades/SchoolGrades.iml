@@ -73,6 +73,7 @@
     <orderEntry type="module" module-name="LibWizardPager" exported="" />
     <orderEntry type="module" module-name="HoloGraphLibrary" exported="" />
     <orderEntry type="module" module-name="library" exported="" />
+    <orderEntry type="module" module-name="android-betterpickers-library" exported="" />
   </component>
 </module>
 

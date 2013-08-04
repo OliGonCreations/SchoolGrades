@@ -48,7 +48,7 @@ public class FragmentSubjectAllocationDialog extends SherlockDialogFragment impl
         sbAllocation = (SeekBar) view.findViewById(R.id.sbAllocation);
         cbCustom.setOnCheckedChangeListener(this);
         sbAllocation.setOnSeekBarChangeListener(this);
-        int[] allocation = FragmentSubjects.db.getAllocation(title);
+        int[] allocation = ActivityMain.db.getAllocation(title);
         if (allocation[1] == 1) {
             sbAllocation.setProgress(10);
             tvAllocationS.setText("2");
@@ -70,7 +70,7 @@ public class FragmentSubjectAllocationDialog extends SherlockDialogFragment impl
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        FragmentSubjects.db.updateAllocation(title, Integer.parseInt(tvAllocationS.getText().toString()), Integer.parseInt(tvAllocationM.getText().toString()), mSelectedColor);
+                        ActivityMain.db.updateAllocation(title, Integer.parseInt(tvAllocationS.getText().toString()), Integer.parseInt(tvAllocationM.getText().toString()), mSelectedColor);
                         FragmentSubjectDialog.updateValues();
                         getDialog().dismiss();
                     }

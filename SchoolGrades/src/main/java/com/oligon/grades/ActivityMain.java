@@ -27,7 +27,10 @@ public class ActivityMain extends SherlockFragmentActivity {
     public final static String KEY_SUBJECT_PRIM = "KEY_SUBJECT_PRIM";
     public final static String KEY_SUBJECT_SEC = "KEY_SUBJECT_SEC";
     public final static String KEY_SETUP = "PREFERENCE_KEY_SETUP";
+    public final static String KEY_LASTTAB = "PREFERENCE_KEY_LASTTAB";
     public final static String prefs = "SHARED_PREFERENCES_MAIN";
+
+    public static Database db;
 
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
@@ -37,11 +40,14 @@ public class ActivityMain extends SherlockFragmentActivity {
     private CharSequence mTitle;
     private String[] mDrawerTitles;
 
+    private int mPosition;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         sp = getSharedPreferences(prefs, MODE_PRIVATE);
+        db = new Database(this);
 
         if (!sp.getBoolean(KEY_SETUP, false))
             startActivity(new Intent(this, ActivityInit.class));
@@ -71,11 +77,16 @@ public class ActivityMain extends SherlockFragmentActivity {
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
-        if (savedInstanceState == null)
-            selectItem(0);
+        selectItem(sp.getInt(KEY_LASTTAB, 0));
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sp.edit().putInt(KEY_LASTTAB, mPosition).commit();
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
@@ -105,6 +116,7 @@ public class ActivityMain extends SherlockFragmentActivity {
         }
         mDrawerList.setItemChecked(position, true);
         mDrawerLayout.closeDrawer(mDrawerList);
+        mPosition = position;
     }
 
     @Override

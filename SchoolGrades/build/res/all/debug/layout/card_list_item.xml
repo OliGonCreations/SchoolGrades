@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/listPreferredItemHeightLarge"
                 android:padding="8dp"
-                android:background="@drawable/background_card">
+                android:background="@drawable/list_item_background">
 
     <ImageView
             android:layout_height="?android:attr/listPreferredItemHeightLarge"
@@ -22,12 +21,12 @@
             android:layout_marginLeft="18dp"
             android:layout_toRightOf="@+id/color"
             android:layout_centerVertical="true"
-            android:textColor="#707070"/>
+            android:textColor="@color/text"/>
 
     <ImageView
             android:id="@+id/icAverage"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:src="@drawable/ic_average"
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+id/subject_current_average"/>

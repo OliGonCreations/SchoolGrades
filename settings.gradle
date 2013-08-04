@@ -1,1 +1,1 @@
-include ':SchoolGrades', ':libraries:ActionBarSherlock:actionbarsherlock', ':libraries:WizardPager:LibWizardPager', ':libraries:holographlibrary:HoloGraphLibrary', ':libraries:android-betterpickers:library'
+include ':SchoolGrades', ':libraries:ActionBarSherlock:actionbarsherlock', ':libraries:WizardPager:LibWizardPager', ':libraries:holographlibrary:HoloGraphLibrary', ':libraries:android-betterpickers:library', ':libraries:UndoBar:library'

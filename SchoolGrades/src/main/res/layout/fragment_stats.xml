@@ -3,4 +3,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fortschritt"
+            android:textColor="#FFAAAAAA"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="18dp"
+            android:textAllCaps="true"
+            android:id="@+id/title_progress"
+            android:layout_alignParentLeft="true"/>
+    <ProgressBar
+            android:id="@+id/stats_progress_bar"
+            android:progressDrawable="@drawable/progress_bar_flat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/Widget.Sherlock.ProgressBar.Horizontal"
+            android:max="40"
+            android:layout_below="@+id/title_progress"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+    </ProgressBar>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text"
+            android:id="@+id/stats_progress_text"
+            android:layout_alignBottom="@+id/stats_progress_bar"
+            android:layout_alignTop="@+id/stats_progress_bar"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"/>
 </RelativeLayout>

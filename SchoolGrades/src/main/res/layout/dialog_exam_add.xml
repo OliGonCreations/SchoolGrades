@@ -24,4 +24,71 @@
             android:layout_marginRight="8dp"
             android:background="@color/main_orange"/>
 
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fach"
+            android:textColor="#FFAAAAAA"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="18dp"
+            android:textAllCaps="true"
+            android:id="@+id/dialog_exam_add_subject_hint"
+            android:layout_below="@+id/dialog_exam_title"
+            android:layout_alignParentLeft="true"/>
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_exam_add_subject"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/dialog_exam_add_subject_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datum"
+            android:textColor="#FFAAAAAA"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="true"
+            android:id="@+id/dialog_exam_add_date_hint"
+            android:layout_below="@+id/dialog_exam_add_subject"
+            android:layout_alignLeft="@+id/dialog_exam_add_subject"/>
+
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_exam_add_date"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/dialog_exam_add_date_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_exam_add_extra"
+            android:layout_below="@+id/dialog_exam_add_date"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_exam_extra"/>
+
+
+
 </RelativeLayout>
