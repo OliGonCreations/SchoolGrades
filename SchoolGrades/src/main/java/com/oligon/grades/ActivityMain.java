@@ -42,12 +42,15 @@ public class ActivityMain extends SherlockFragmentActivity {
 
     private int mPosition;
 
+    public static FragmentManager fm;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         sp = getSharedPreferences(prefs, MODE_PRIVATE);
         db = new Database(this);
+        fm = getSupportFragmentManager();
 
         if (!sp.getBoolean(KEY_SETUP, false))
             startActivity(new Intent(this, ActivityInit.class));

@@ -8,7 +8,7 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="64dp"
-            android:id="@+id/dialog_exam_title"
+            android:id="@+id/dialog_export_title"
             android:layout_gravity="left|center_vertical"
             android:textSize="32sp"
             android:textColor="#707070"
@@ -17,31 +17,30 @@
             android:layout_marginLeft="18dp"/>
 
     <View
-            android:layout_below="@+id/dialog_exam_title"
+            android:layout_below="@+id/dialog_export_title"
             android:layout_height="1dp"
             android:layout_width="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:background="@color/main_orange"/>
 
-
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/subject"
+            android:text="@string/dialog_export_file"
             android:textColor="#FFAAAAAA"
             android:layout_marginTop="12dp"
             android:layout_marginLeft="18dp"
             android:textAllCaps="true"
             android:id="@+id/dialog_exam_add_subject_hint"
-            android:layout_below="@+id/dialog_exam_title"
+            android:layout_below="@+id/dialog_export_title"
             android:layout_alignParentLeft="true"/>
 
-    <Spinner
+    <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/dialog_exam_add_subject"
-            android:spinnerMode="dialog"
+            android:id="@+id/dialog_export_filename"
+            android:inputType="text"
             android:layout_below="@+id/dialog_exam_add_subject_hint"
             android:layout_centerHorizontal="true"
             android:layout_alignParentLeft="true"
@@ -50,45 +49,13 @@
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"/>
 
-    <TextView
+    <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/date"
-            android:textColor="#FFAAAAAA"
-            android:layout_marginTop="12dp"
-            android:textAllCaps="true"
-            android:id="@+id/dialog_exam_add_date_hint"
-            android:layout_below="@+id/dialog_exam_add_subject"
-            android:layout_alignLeft="@+id/dialog_exam_add_subject"/>
-
-
-    <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/dialog_exam_add_date"
-            android:spinnerMode="dropdown"
-            android:layout_below="@+id/dialog_exam_add_date_hint"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="4dp"
-            android:layout_marginLeft="18dp"
-            android:layout_marginRight="18dp"/>
-
-    <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/dialog_exam_add_extra"
-            android:layout_below="@+id/dialog_exam_add_date"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="18dp"
-            android:layout_marginRight="18dp"
-            android:inputType="textMultiLine"
-            android:hint="@string/hint_exam_extra"/>
-
-
+            android:text="@string/dialog_export_share"
+            android:id="@+id/dialog_export_share"
+            android:layout_below="@+id/dialog_export_filename"
+            android:layout_alignLeft="@+id/dialog_export_filename"
+            android:layout_marginTop="14dp"/>
 
 </RelativeLayout>

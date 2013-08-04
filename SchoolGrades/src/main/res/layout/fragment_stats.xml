@@ -6,7 +6,7 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fortschritt"
+            android:text="@string/progress_title"
             android:textColor="#FFAAAAAA"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="18dp"

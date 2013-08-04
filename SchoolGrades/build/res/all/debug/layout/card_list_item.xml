@@ -10,7 +10,8 @@
             android:layout_width="32dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:id="@+id/color"/>
+            android:id="@+id/color"
+            android:contentDescription="@string/image_description"/>
 
     <TextView
             android:layout_width="wrap_content"
@@ -29,7 +30,8 @@
             android:layout_height="24dp"
             android:src="@drawable/ic_average"
             android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/subject_current_average"/>
+            android:layout_toLeftOf="@+id/subject_current_average"
+            android:contentDescription="@string/image_description"/>
     <TextView
             android:layout_width="28dp"
             android:layout_height="wrap_content"

@@ -30,8 +30,8 @@ public class ActivityInit extends SherlockFragmentActivity implements PageFragme
 
     public static ArrayList<String> choicesPrim = new ArrayList<String>();
     public static ArrayList<String> choicesSec = new ArrayList<String>();
-    public static String primSubject = "";
-    public static String secSubject = "";
+    public String primSubject = "";
+    public String secSubject = "";
     private ViewPager mPager;
     private MyPagerAdapter mPagerAdapter;
     private boolean mEditingAfterReview;

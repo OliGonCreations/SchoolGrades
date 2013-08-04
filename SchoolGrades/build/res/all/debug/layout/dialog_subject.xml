@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
@@ -35,7 +36,8 @@
             android:layout_marginRight="4dp"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="8dp"
-            android:id="@+id/icAverage"/>
+            android:id="@+id/icAverage"
+            android:contentDescription="@string/image_description"/>
 
     <TextView
             android:layout_width="wrap_content"
@@ -57,7 +59,8 @@
             android:layout_marginLeft="16dp"
             android:layout_alignTop="@+id/icAverage"
             android:layout_alignBottom="@+id/icAverage"
-            android:layout_toRightOf="@+id/dialog_subject_current_average"/>
+            android:layout_toRightOf="@+id/dialog_subject_current_average"
+            android:contentDescription="@string/image_description"/>
 
 
     <TextView
@@ -70,7 +73,8 @@
             android:id="@+id/dialog_subject_current_average_S"
             android:layout_alignTop="@+id/icAverage"
             android:layout_alignBottom="@+id/icAverage"
-            android:layout_toRightOf="@+id/icAverageS"/>
+            android:layout_toRightOf="@+id/icAverageS"
+            tools:ignore="HardcodedText"/>
 
 
     <ImageView
@@ -81,7 +85,8 @@
             android:layout_marginLeft="16dp"
             android:layout_alignTop="@+id/icAverage"
             android:layout_alignBottom="@+id/icAverage"
-            android:layout_toRightOf="@+id/dialog_subject_current_average_S"/>
+            android:layout_toRightOf="@+id/dialog_subject_current_average_S"
+            android:contentDescription="@string/image_description"/>
 
 
     <TextView
@@ -94,7 +99,8 @@
             android:id="@+id/dialog_subject_current_average_M"
             android:layout_alignTop="@+id/icAverage"
             android:layout_alignBottom="@+id/icAverage"
-            android:layout_toRightOf="@+id/icAverageM"/>
+            android:layout_toRightOf="@+id/icAverageM"
+            tools:ignore="HardcodedText"/>
 
     <ImageView
             android:layout_width="32dp"
@@ -106,7 +112,8 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="12dp"
             android:layout_marginBottom="16dp"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/image_description"/>
 
     <LinearLayout
             android:layout_height="wrap_content"
@@ -122,7 +129,8 @@
                 android:src="@drawable/ic_average_orange"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:contentDescription="@string/image_description"/>
 
         <EditText
                 android:id="@+id/dialog_subject_gradeS_1"
@@ -196,7 +204,8 @@
                 android:src="@drawable/ic_average_blue"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:gravity="center_vertical"/>
+                android:gravity="center_vertical"
+                android:contentDescription="@string/image_description"/>
 
         <EditText
                 android:id="@+id/dialog_subject_gradeM_1"

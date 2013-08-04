@@ -24,13 +24,13 @@
         <item name="actionDropDownStyle">@style/DropDownNav.Orange</item>
         <item name="actionBarStyle">@style/ActionBar.Solid.Orange</item>
         <item name="actionModeBackground">@drawable/cab_background_top_orange</item>
-        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_orange</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_orange</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Orange</item>
 
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Orange</item>
         <item name="android:actionBarItemBackground">@drawable/selectable_background_orange</item>
         <item name="android:actionModeBackground">@drawable/cab_background_top_orange</item>
-        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_orange</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_orange</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Orange</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Orange</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Orange</item>

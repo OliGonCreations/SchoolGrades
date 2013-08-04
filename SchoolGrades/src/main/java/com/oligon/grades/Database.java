@@ -272,6 +272,11 @@ public class Database extends SQLiteOpenHelper {
         return list.toArray(dummyString);
     }
 
+    public Cursor getEverything() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db != null ? db.query(TABLE_GRADES, new String[]{KEY_ID, KEY_SUBJECT, KEY_GRADE1_S, KEY_GRADE2_S, KEY_GRADE3_S, KEY_GRADE4_S, KEY_CURRENT_AVERAGE}, null, null, null, null, KEY_COUNT + " DESC") : null;
+    }
+
     public void addExam(String subject, Calendar date, String extra) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_GRADES, null, KEY_SUBJECT + "=?", new String[]{subject}, null, null, null, null);

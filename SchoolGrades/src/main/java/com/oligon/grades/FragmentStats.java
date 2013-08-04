@@ -55,15 +55,10 @@ public class FragmentStats extends SherlockFragment {
             int[] grades;
             for (String subject : ActivityMain.db.getAllSubjectTitles()) {
                 grades = ActivityMain.db.getGradesS(subject);
-                for (int i = 0; i < grades.length; i++) {
-                    if (grades[i] != -1)
+                for (int i : grades) {
+                    if (i != -1)
                         progress++;
                     publishProgress(progress);
-                    try {
-                        Thread.sleep(80);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
                 }
             }
             return null;

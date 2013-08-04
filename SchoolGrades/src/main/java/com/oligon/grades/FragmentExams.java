@@ -52,7 +52,7 @@ public class FragmentExams extends SherlockListFragment implements PopupMenu.OnM
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_subjects, null);
+        return inflater.inflate(R.layout.fragment_list, null);
     }
 
     @Override

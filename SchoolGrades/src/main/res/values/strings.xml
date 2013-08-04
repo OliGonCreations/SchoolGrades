@@ -22,9 +22,14 @@
 
     <string name="prefs_main">Allgemein</string>
     <string name="prefs_setup">Fächer bearbeiten</string>
+    <string name="prefs_export">Noten exportieren</string>
 
     <string name="dialog_exam_add_title">Klausur hinzufügen</string>
     <string name="hint_exam_extra">Notiz</string>
+
+    <string name="dialog_export_title">Exportieren</string>
+    <string name="dialog_export_file">Dateiname</string>
+    <string name="dialog_export_share">Datei teilen</string>
 
     <string name="color_swatch_description">Color %1$d</string>
     <string name="color_swatch_description_selected">Color %1$d selected</string>
@@ -32,5 +37,10 @@
 
     <string name="dialog_sort_title">Sortieren</string>
     <string name="undo_message">Wiederherstellen</string>
+
+    <string name="subject">Fach</string>
+    <string name="date">Datum</string>
+    <string name="image_description">Icon</string>
+    <string name="progress_title">Fortschritt</string>
 
 </resources>

@@ -5,5 +5,8 @@
         <Preference android:title="@string/prefs_setup" >
             <intent android:action="grades.SETUP" />
         </Preference>
+        <Preference android:title="@string/prefs_export" android:key="pref_export">
+
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

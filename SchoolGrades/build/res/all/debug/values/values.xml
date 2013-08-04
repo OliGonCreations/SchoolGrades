@@ -603,9 +603,6 @@
     <dimen name="abs__dropdownitem_text_padding_right">8dip</dimen>
     <dimen name="abs__search_view_preferred_width">320dip</dimen>
     <dimen name="abs__search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/dimens.xml -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml -->
     <dimen name="body_font_padding">4dp</dimen>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/dimens.xml -->
@@ -676,7 +673,11 @@
     <string name="color_picker_default_title">Select a Color</string>
     <string name="color_swatch_description">Color %1$d</string>
     <string name="color_swatch_description_selected">Color %1$d selected</string>
+    <string name="date">Datum</string>
     <string name="dialog_exam_add_title">Klausur hinzufügen</string>
+    <string name="dialog_export_file">Dateiname</string>
+    <string name="dialog_export_share">Datei teilen</string>
+    <string name="dialog_export_title">Exportieren</string>
     <string name="dialog_sort_title">Sortieren</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
@@ -691,6 +692,8 @@
     <string name="hms_picker_seconds_label">S</string>
     <string name="hours_label">h</string>
     <string name="hours_label_description">hours</string>
+    <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml -->
+    <string name="image_description">Icon</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesWizardPagerLibWizardPagerUnspecified.aar/res/values/values.xml -->
     <string name="label_your_email">Email</string>
     <string name="label_your_name">Name</string>
@@ -710,10 +713,12 @@
     <string name="picker_cancel">Cancel</string>
     <string name="picker_set">OK</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml -->
+    <string name="prefs_export">Noten exportieren</string>
     <string name="prefs_main">Allgemein</string>
     <string name="prefs_setup">Fächer bearbeiten</string>
     <string name="prev">Zurück</string>
     <string name="prim_subject_pl">Kernfächer</string>
+    <string name="progress_title">Fortschritt</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesUndoBarLibraryUnspecified.aar/res/values/values.xml -->
     <string name="retry">Retry</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml -->
@@ -723,6 +728,7 @@
     <string name="seconds_label">s</string>
     <string name="seconds_label_description">seconds</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/src/main/res/values/strings.xml -->
+    <string name="subject">Fach</string>
     <string name="submit_confirm_button">Bestätigen</string>
     <string name="submit_confirm_message">Fächer gespeichert.</string>
     <!-- From: file:/home/jonas/Dokumente/Development/Android%20Workspace/SchoolGradesProject/SchoolGrades/build/exploded-bundles/SchoolGradesProjectLibrariesAndroidBetterpickersLibraryUnspecified.aar/res/values/values.xml -->
@@ -794,12 +800,12 @@
         <item name="actionDropDownStyle">@style/DropDownNav.Orange</item>
         <item name="actionBarStyle">@style/ActionBar.Solid.Orange</item>
         <item name="actionModeBackground">@drawable/cab_background_top_orange</item>
-        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_orange</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_orange</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Orange</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Orange</item>
         <item name="android:actionBarItemBackground">@drawable/selectable_background_orange</item>
         <item name="android:actionModeBackground">@drawable/cab_background_top_orange</item>
-        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_orange</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_orange</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Orange</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Orange</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Orange</item>

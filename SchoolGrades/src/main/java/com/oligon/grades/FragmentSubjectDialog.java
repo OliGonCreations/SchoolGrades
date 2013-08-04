@@ -7,9 +7,11 @@ import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
@@ -21,13 +23,15 @@ import com.echo.holographlibrary.LinePoint;
 
 import java.math.BigDecimal;
 
-public class FragmentSubjectDialog extends SherlockDialogFragment implements NumberPickerDialogFragment.NumberPickerDialogHandler, View.OnClickListener, LineGraph.OnPointClickedListener {
+public class FragmentSubjectDialog extends SherlockDialogFragment implements NumberPickerDialogFragment.NumberPickerDialogHandler, View.OnClickListener, LineGraph.OnPointClickedListener, View.OnLongClickListener, PopupMenu.OnMenuItemClickListener {
 
     private static LineGraph graph;
     private static EditText grade1s, grade2s, grade3s, grade4s, grade1m, grade2m, grade3m, grade4m;
     private static TextView gradeAverage, gradeSAverage, gradeMAverage;
     private static String title;
     private static Resources res;
+    private int mTerm = 0;
+    private String mAttr;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -97,6 +101,14 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
         grade2m.setOnClickListener(this);
         grade3m.setOnClickListener(this);
         grade4m.setOnClickListener(this);
+        grade1s.setOnLongClickListener(this);
+        grade2s.setOnLongClickListener(this);
+        grade3s.setOnLongClickListener(this);
+        grade4s.setOnLongClickListener(this);
+        grade1m.setOnLongClickListener(this);
+        grade2m.setOnLongClickListener(this);
+        grade3m.setOnLongClickListener(this);
+        grade4m.setOnLongClickListener(this);
     }
 
     @Override
@@ -182,21 +194,26 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
                 super.onProgressUpdate(values);
                 if (values[0] == 0 && average.intValue() >= 0)
                     gradeAverage.setText(average + "");
+                else if (values[0] == 0) gradeAverage.setText("-");
                 else if (values[0] == 1 && averageS.intValue() >= 0)
                     gradeSAverage.setText(averageS + "");
+                else if (values[0] == 1) gradeSAverage.setText("-");
                 else if (values[0] == 2 && averageM.intValue() >= 0)
                     gradeMAverage.setText(averageM + "");
+                else if (values[0] == 2) gradeMAverage.setText("-");
                 else if (values[0] == 3) {
                     if (gradesS[0] >= 0)
                         grade1s.setText(gradesS[0] + "");
+                    else grade1s.setText("");
                     if (gradesS[1] >= 0)
                         grade2s.setText(gradesS[1] + "");
-                    //if (db.isMainSubject(title)) {
+                    else grade2s.setText("");
                     if (gradesS[2] >= 0)
                         grade3s.setText(gradesS[2] + "");
+                    else grade3s.setText("");
                     if (gradesS[3] >= 0)
                         grade4s.setText(gradesS[3] + "");
-                    //}
+                    else grade4s.setText("");
                     graph.removeAllLines();
                     Line l = new Line();
                     LinePoint p;
@@ -215,12 +232,16 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
                 } else if (values[0] == 4) {
                     if (gradesM[0] >= 0)
                         grade1m.setText(gradesM[0] + "");
+                    else grade1m.setText("");
                     if (gradesM[1] >= 0)
                         grade2m.setText(gradesM[1] + "");
+                    else grade2m.setText("");
                     if (gradesM[2] >= 0)
                         grade3m.setText(gradesM[2] + "");
+                    else grade3m.setText("");
                     if (gradesM[3] >= 0)
                         grade4m.setText(gradesM[3] + "");
+                    else grade4m.setText("");
                     Line l = new Line();
                     LinePoint p;
                     for (int i = 0; i < gradesM.length; i++) {
@@ -248,5 +269,58 @@ public class FragmentSubjectDialog extends SherlockDialogFragment implements Num
         if (lineIndex == 1 || graph.getLines().size() < 2) text += " mündlich";
         else text += " schriftlich";
         CheatSheet.showCheatSheet(graph, graph.getLine(lineIndex).getPoint(pointIndex).getY() + text);
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        PopupMenu popup = new PopupMenu(getActivity(), v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.action_exam);
+        popup.show();
+        switch (v.getId()) {
+            case R.id.dialog_subject_gradeS_1:
+                mTerm = 0;
+                mAttr = "s";
+                break;
+            case R.id.dialog_subject_gradeS_2:
+                mTerm = 1;
+                mAttr = "s";
+                break;
+            case R.id.dialog_subject_gradeS_3:
+                mTerm = 2;
+                mAttr = "s";
+                break;
+            case R.id.dialog_subject_gradeS_4:
+                mTerm = 3;
+                mAttr = "s";
+                break;
+            case R.id.dialog_subject_gradeM_1:
+                mTerm = 0;
+                mAttr = "m";
+                break;
+            case R.id.dialog_subject_gradeM_2:
+                mTerm = 1;
+                mAttr = "m";
+                break;
+            case R.id.dialog_subject_gradeM_3:
+                mTerm = 2;
+                mAttr = "m";
+                break;
+            case R.id.dialog_subject_gradeM_4:
+                mTerm = 3;
+                mAttr = "m";
+                break;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        if (item.getItemId() == R.id.action_delete) {
+            ActivityMain.db.updateGrade(title, mTerm, -1, mAttr);
+            updateValues();
+            return true;
+        }
+        return false;
     }
 }
